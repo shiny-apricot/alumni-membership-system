@@ -1,5 +1,5 @@
 <?php
-
+//my first code
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpassword = " ";
@@ -12,3 +12,4 @@ if($con = mysqli_connect(!$dbhost, $dbuser, $dbpass, $dbname))
 session_start();
     $_SESSION; 
 ?>
+
