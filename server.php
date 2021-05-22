@@ -16,9 +16,9 @@
 
 
     if (!$db_selected) {
-    $sql = 'CREATE DATABASE loginpage_yasininal';
-    mysqli_query($db,$sql);
-    mysqli_close($db);
+        $sql = 'CREATE DATABASE loginpage_yasininal';
+        mysqli_query($db,$sql);
+        mysqli_close($db);
     }
    
     $sql_create_table = "CREATE TABLE IF NOT EXISTS user_table (
@@ -74,6 +74,7 @@
 
     //login
     if(isset($_POST['login'])) {
+        header('location: home.html');
         $username = mysqli_real_escape_string($db, $_POST['username']);
         $password = mysqli_real_escape_string($db, $_POST['password']);
 
@@ -96,7 +97,7 @@
             if(mysqli_num_rows($result) == 1){
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = "You are now logged in";
-                header('location: mainpage.php'); //redirect to home page 
+                header('location: home.html'); //redirect to home page 
             }
             else{
                 array_push($errors, "Wrong username/password combination.!");
