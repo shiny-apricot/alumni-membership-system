@@ -74,7 +74,7 @@
 
     //login
     if(isset($_POST['login'])) {
-        header('location: home.html');
+        header('location: homepage.html');
         $username = mysqli_real_escape_string($db, $_POST['username']);
         $password = mysqli_real_escape_string($db, $_POST['password']);
 
