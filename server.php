@@ -8,10 +8,10 @@
 
     $errors = array();
 
-    $db_host = "ec2-54-228-139-34.eu-west-1.compute.amazonaws.com"
-    $db_name = "d7hvhj4nd7k2ob"
-    $db_user = "ckhbnszmophocn"
-    $db_password = "3d71b1cc99d3b995a555a6b41b31539fbb0a9b68bf0d34aedf20269e1a69e461"
+    $db_host = "ec2-54-228-139-34.eu-west-1.compute.amazonaws.com";
+    $db_name = "d7hvhj4nd7k2ob";
+    $db_user = "ckhbnszmophocn";
+    $db_password = "3d71b1cc99d3b995a555a6b41b31539fbb0a9b68bf0d34aedf20269e1a69e461";
     // connect to the database
 
     // $db = mysqli_connect('localhost', 'root', '');
@@ -27,13 +27,30 @@
     //     pg_close($db);
     // }
    
+    // $sql_drop = "DROP TABLE IF EXISTS user_table";
     $sql_create_table = "CREATE TABLE IF NOT EXISTS user_table (
-                            id INT(6) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-                            username VARCHAR(50) NOT NULL,
-                            email VARCHAR(50) NOT NULL,
-                            password VARCHAR(50) NOT NULL)";
+        id SERIAL PRIMARY KEY,
+        username VARCHAR(50) NOT NULL,
+        password VARCHAR(50) NOT NULL)";
                             
-    pg_query($db, $sql_create_table);
+    $sql_username = "admin";
+    $sql_password = md5("admin");
+
+    echo "$sql_username <br>";
+    echo "$sql_password <br>";
+
+
+    $sql_insert_admin = "INSERT INTO user_table (username,password) VALUES ('$sql_username','$sql_password')";
+
+    // pg_query($db, $sql_drop);                        
+    $isCreated = pg_query($db, $sql_create_table);
+    pg_query($db, $sql_insert_admin);
+
+    if($isCreated){
+        echo "created successfuly <br>";
+    }
+
+   
   
 
     //if the register button is clicked
@@ -74,13 +91,13 @@
         //if there are no errors, save user to database
         if(count($errors) == 0){
             $password = md5($password1); //encrypt password before strong in database
-            $sql = "INSERT INTO user_table (username, email, password) VALUES ('$username', '$email', '$password')";
+            $sql = "INSERT INTO user_table (username, password) VALUES ('$username', '$password')";
 
             // mysqli_query($db, $sql);
             pg_query($db, $sql);
             $_SESSION['username'] = $username;
             $_SESSION['success'] = "You are now logged in";
-            header('location: mainpage.php'); //redirect to home page 
+            header('location: homepage.html'); //redirect to home page 
         }    
     }
 
@@ -100,21 +117,26 @@
         if(empty($password)){
             array_push($errors, "Password is required");
         }
+
         if(count($errors)==0){
             $password = md5($password); //encrypt password before comparing with that from database
-            $query = "SELECT * FROM user_table WHERE username='$username' AND password='$password'";
-            
-            // $result = mysqli_query($db, $query);
+            $query = "SELECT * FROM user_table WHERE username = 'admin' AND password = '21232f297a57a5a743894a0e4a801fc3'";
+
+
+            echo "$password <br>";
+            echo "$username <br>";
+
+             // $result = mysqli_query($db, $query);
             $result = pg_query($db, $query);
+            echo "$result <br>";
 
-            echo mysqli_num_rows($result);
-            echo $password;
-
+            echo pg_num_rows($result);
             
-            if(mysqli_num_rows($result) == 1){
+            if(pg_num_rows($result) >= 1){
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = "You are now logged in";
-                header('location: home.html'); //redirect to home page 
+                echo "successfull";
+                header('location: homepage.html'); //redirect to home page 
             }
             else{
                 array_push($errors, "Wrong username/password combination.!");
@@ -169,7 +191,7 @@
             $up_password = md5($up_password); //encrypt password before strong in database
             $sql = "UPDATE user_table SET username= '$up_username', email= '$up_email', password= '$up_password' WHERE username='$origin_username'";
 
-            mysqli_query($db, $sql);
+            pg_query($db, $sql);
             $_SESSION['username'] = $up_username;
             $_SESSION['success'] = "User Credentials Updated";
             
