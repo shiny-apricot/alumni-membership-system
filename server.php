@@ -8,18 +8,24 @@
 
     $errors = array();
 
+    $db_host = "ec2-54-228-139-34.eu-west-1.compute.amazonaws.com"
+    $db_name = "d7hvhj4nd7k2ob"
+    $db_user = "ckhbnszmophocn"
+    $db_password = "3d71b1cc99d3b995a555a6b41b31539fbb0a9b68bf0d34aedf20269e1a69e461"
     // connect to the database
-    $db = mysqli_connect('localhost', 'root', '');
+
+    // $db = mysqli_connect('localhost', 'root', '');
+    $db = pg_connect("host=$db_host dbname=$db_name user=$db_user password=$db_password");
 
     // create table in the current database
-    $db_selected = mysqli_select_db($db,'loginpage_yasininal');
+    // $db_selected = mysqli_select_db($db,'loginpage_yasininal');
 
 
-    if (!$db_selected) {
-        $sql = 'CREATE DATABASE loginpage_yasininal';
-        mysqli_query($db,$sql);
-        mysqli_close($db);
-    }
+    // if (!$db_selected) {
+    //     $sql = 'CREATE DATABASE loginpage_yasininal';
+    //     pg_query($db,$sql);
+    //     pg_close($db);
+    // }
    
     $sql_create_table = "CREATE TABLE IF NOT EXISTS user_table (
                             id INT(6) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -27,16 +33,21 @@
                             email VARCHAR(50) NOT NULL,
                             password VARCHAR(50) NOT NULL)";
                             
-    mysqli_query($db, $sql_create_table);
+    pg_query($db, $sql_create_table);
   
 
     //if the register button is clicked
     if (isset($_POST['register']))
     {
-        $username = mysqli_real_escape_string($db, $_POST['username']);
-        $email = mysqli_real_escape_string($db, $_POST['email']);
-        $password1 = mysqli_real_escape_string($db, $_POST['password1']);
-        $password2 = mysqli_real_escape_string($db, $_POST['password2']);
+        // $username = mysqli_real_escape_string($db, $_POST['username']);
+        // $email = mysqli_real_escape_string($db, $_POST['email']);
+        // $password1 = mysqli_real_escape_string($db, $_POST['password1']);
+        // $password2 = mysqli_real_escape_string($db, $_POST['password2']);
+
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $password1 = $_POST['password1'];
+        $password2 = $_POST['password2'];
 
         // ensure that form fields are fileld properly
         if(empty($username))
@@ -65,7 +76,8 @@
             $password = md5($password1); //encrypt password before strong in database
             $sql = "INSERT INTO user_table (username, email, password) VALUES ('$username', '$email', '$password')";
 
-            mysqli_query($db, $sql);
+            // mysqli_query($db, $sql);
+            pg_query($db, $sql);
             $_SESSION['username'] = $username;
             $_SESSION['success'] = "You are now logged in";
             header('location: mainpage.php'); //redirect to home page 
@@ -74,9 +86,12 @@
 
     //login
     if(isset($_POST['login'])) {
-        header('location: homepage.html');
-        $username = mysqli_real_escape_string($db, $_POST['username']);
-        $password = mysqli_real_escape_string($db, $_POST['password']);
+        // header('location: homepage.html');
+        // $username = mysqli_real_escape_string($db, $_POST['username']);
+        // $password = mysqli_real_escape_string($db, $_POST['password']);
+
+        $username = $_POST['username'];
+        $password = $_POST['password'];
 
         // ensure that form fields are filled properly
         if(empty($username)){
@@ -88,7 +103,9 @@
         if(count($errors)==0){
             $password = md5($password); //encrypt password before comparing with that from database
             $query = "SELECT * FROM user_table WHERE username='$username' AND password='$password'";
-            $result = mysqli_query($db, $query);
+            
+            // $result = mysqli_query($db, $query);
+            $result = pg_query($db, $query);
 
             echo mysqli_num_rows($result);
             echo $password;
