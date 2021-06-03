@@ -136,7 +136,7 @@
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = "You are now logged in";
                 echo "successfull";
-                header('location: homepage.html'); //redirect to home page 
+                header('location: home.html'); //redirect to home page 
             }
             else{
                 array_push($errors, "Wrong username/password combination.!");
