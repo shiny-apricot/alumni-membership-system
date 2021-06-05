@@ -28,27 +28,27 @@
     // }
    
     // $sql_drop = "DROP TABLE IF EXISTS user_table";
-    $sql_create_table = "CREATE TABLE IF NOT EXISTS user_table (
-        id SERIAL PRIMARY KEY,
-        username VARCHAR(50) NOT NULL,
-        password VARCHAR(50) NOT NULL)";
+    // $sql_create_table = "CREATE TABLE IF NOT EXISTS user_table (
+    //     id SERIAL PRIMARY KEY,
+    //     username VARCHAR(50) NOT NULL,
+    //     password VARCHAR(50) NOT NULL)";
                             
-    $sql_username = "admin";
-    $sql_password = md5("admin");
+    // $sql_username = "admin";
+    // $sql_password = md5("admin");
 
-    echo "$sql_username <br>";
-    echo "$sql_password <br>";
+    // echo "$sql_username <br>";
+    // echo "$sql_password <br>";
 
 
-    $sql_insert_admin = "INSERT INTO user_table (username,password) VALUES ('$sql_username','$sql_password')";
+    // $sql_insert_admin = "INSERT INTO user_table (username,password) VALUES ('$sql_username','$sql_password')";
 
     // pg_query($db, $sql_drop);                        
-    $isCreated = pg_query($db, $sql_create_table);
-    pg_query($db, $sql_insert_admin);
+    // $isCreated = pg_query($db, $sql_create_table);
+    // pg_query($db, $sql_insert_admin);
 
-    if($isCreated){
-        echo "created successfuly <br>";
-    }
+    // if($isCreated){
+    //     echo "created successfuly <br>";
+    // }
 
    
   
