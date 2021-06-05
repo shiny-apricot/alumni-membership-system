@@ -1,0 +1,11 @@
+  /* copy and paste this between 
+  292-302'nd row of home.css */
+#fancyfigures {
+    padding: 0px 0px;
+  }
+  
+  .pie {
+    width: 200px;
+    height: 200px;
+    mix-blend-mode: multiply;
+  }

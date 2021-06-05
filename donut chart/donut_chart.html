@@ -1,0 +1,54 @@
+  <html>  
+      <head>
+          <title>Fancy Figure: Donut Chart</title>  
+          <!-- 
+            Copy from here
+            -->
+               <link rel="stylesheet" href="home.css">
+               <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>  
+               <script type="text/javascript">  
+               google.charts.load('current', {'packages':['corechart']});  
+               google.charts.setOnLoadCallback(drawChart);
+ 
+               function drawChart()  
+               {  
+                 var data = google.visualization.arrayToDataTable([  
+                           ['Department',           'Number'],  
+                           ['Economics',               17],
+                           ['International Relations', 15],
+                           ['Business Administration', 23],
+                           ['Software Engineering',    35]
+                      ]);  
+                 var options = {
+                       width: 500,
+                       height: 500,  
+                       pieHole: 0.6,
+                       pieSliceText: 'label',
+                       pieSliceTextStyle: {
+                          color: 'black',
+                          },
+                          textStyle: {
+                          fontSize: 4
+                          },
+                          chartArea:{
+                           left:100,
+                           top:50,
+                           width:"65%",
+                           height:"65%"
+                         }
+                      };  
+                      
+                 var chart = new google.visualization.PieChart(document.getElementById('piechart'));  
+                 chart.draw(data, options);  
+               }
+                 </script>
+                     <div id="piechart" class="pie"></div>  
+                 </div>
+                 <!-- 
+                   To here and paste this between
+                   116-120'th rows of home.html
+                   (below of <div id="fancyfigures">)
+                   (above of </section>)
+                   -->
+      </body>  
+ </html>  
