@@ -1,5 +1,5 @@
 CREATE TABLE "Member" (
-  "Member_ID" int (10),
+  "Member_ID" int,
   "Member_Number" int,
   "Gender" varchar (6),
   "Name" varchar (20),
@@ -7,61 +7,60 @@ CREATE TABLE "Member" (
   "Workplace" varchar (50),
   "E-Mail" varchar (50),
   "Graduation Date" varchar (10),
-  "National_ID_Number" int (11),
+  "National_ID_Number" int,
   "Department" varchar (50),
-  "Phone_Number" int (10),
+  "Phone_Number" int,
   "Address" varchar (50),
   "Province" varchar (50),
-  "Remaining_Fee" int (10),
+  "Remaining_Fee" int,
   "Inform_Member_Sit" varchar (150),
   "Member_Regist_Date" varchar (10),
   "Member_Situation" varchar (10),
   PRIMARY KEY ("Member_ID", "Member_Number", "National_ID_Number")
 );
 
-CREATE INDEX "Key" ON  "Member" ("Gender", "Name", "Surname", "Workplace", "E-Mail", "Graduation Date", "Department", "Phone_Number", "Address", "Province", "Remaining_Fee", "Inform_Member_Sit", "Member_Regist_Date", "Member_Situation");
+-- CREATE INDEX "Key" ON  "Member" ("Gender", "Name", "Surname", "Workplace", "E-Mail", "Graduation Date", "Department", "Phone_Number", "Address", "Province", "Remaining_Fee", "Inform_Member_Sit", "Member_Regist_Date", "Member_Situation");
 
 CREATE TABLE "Years" (
-  "Year" int (4),
-  "Annual Fee" int (4),
+  "Year" int,
+  "Annual Fee" int,
   PRIMARY KEY ("Year")
 );
 
-CREATE INDEX "Key" ON  "Years" ("Annual Fee");
+-- CREATE INDEX "Years" ON  "Years" ("Annual Fee");
 
 CREATE TABLE "User" (
-  "User_ID" int (10),
+  "User_ID" int,
   "E-Mail" varchar (50),
   "Password" varchar (50),
   PRIMARY KEY ("User_ID")
 );
 
-CREATE INDEX "Key" ON  "User" ("E-Mail", "Password");
+-- CREATE INDEX "User" ON  "User" ("E-Mail", "Password");
 
 CREATE TABLE "Receipt" (
-  "Receipt_No" int (10),
-  "National_ID_Number" int (11),
-  "Balance" int (50),
+  "Receipt_No" int,
+  "National_ID_Number" int,
+  "Balance" int,
   "Tag" varchar (50),
   "Explanation" varchar (100),
-  "Fee" int (10),
+  "Fee" int,
   "Date_of_Receipt" varchar (10),
   PRIMARY KEY ("Receipt_No")
 );
 
-CREATE INDEX "Key" ON  "Receipt" ("Balance", "Tag", "Explanation", "Fee", "Date_of_Receipt");
+-- CREATE INDEX "Receipt" ON  "Receipt" ("Balance", "Tag", "Explanation", "Fee", "Date_of_Receipt");
 
 CREATE TABLE "Payment" (
-  "Member_ID" int (10),
-  "Year" int (4),
-  "Fee" int (10),
+  "Member_ID" int,
+  "Year" int,
+  "Fee" int,
   PRIMARY KEY ("Member_ID", "Year")
 );
 
 CREATE TABLE "Admin" (
-  "User_ID" int (10),
+  "User_ID" int,
   "Password" varchar (50)
 );
 
-CREATE INDEX "Key" ON  "Admin" ("Password");
-
+-- CREATE INDEX "Admin" ON  "Admin" ("Password");
