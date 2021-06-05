@@ -1,0 +1,482 @@
+.mediaViewInfo {
+	--web-view-name: Login;
+	--web-view-id: Login_Page;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Login_Page;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Login Page {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Login;
+	--web-view-id: Login_Page;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-enable-deep-linking: true;
+}
+@keyframes  {
+
+
+}
+#loginBackground {
+	position: absolute;
+	width: 1920px;
+	height: 1280.5px;
+	left: 0px;
+	top: -166px;
+	overflow: visible;
+}
+#Login {
+	position: absolute;
+	width: 733px;
+	height: 287px;
+	left: 70px;
+	top: 474px;
+	overflow: visible;
+}
+#Login_l {
+	position: absolute;
+	width: 320px;
+	height: 76px;
+	left: 413px;
+	top: 211px;
+	overflow: visible;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Home.html;
+	cursor: pointer;
+}
+#Rec1 {
+	fill: rgba(248,149,30,1);
+}
+.Rec1 {
+	position: absolute;
+	overflow: visible;
+	width: 320px;
+	height: 76px;
+	left: 0px;
+	top: 0px;
+}
+#Login_n {
+	left: 129px;
+	top: 23px;
+	position: absolute;
+	overflow: visible;
+	width: 64px;
+	white-space: nowrap;
+	line-height: 50px;
+	margin-top: -12.5px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+#Remember_Me {
+	position: absolute;
+	width: 278.462px;
+	height: 40.031px;
+	left: 6.538px;
+	top: 229.38px;
+	overflow: visible;
+}
+#click {
+	fill: rgba(59,35,20,1);
+}
+.click {
+	overflow: visible;
+	position: absolute;
+	width: 40.031px;
+	height: 40.031px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Remember_Me_q {
+	left: 77.462px;
+	top: 2.62px;
+	position: absolute;
+	overflow: visible;
+	width: 202px;
+	white-space: nowrap;
+	line-height: 50px;
+	margin-top: -9.5px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 31px;
+	color: rgba(59,35,20,1);
+}
+#unclick {
+	fill: rgba(59,35,20,1);
+}
+.unclick {
+	display: none;
+	position: absolute;
+	overflow: visible;
+	width: 32px;
+	height: 32px;
+	left: 4.462px;
+	top: 4.62px;
+}
+#Password {
+	position: absolute;
+	width: 733px;
+	height: 90px;
+	left: 0px;
+	top: 91px;
+	overflow: visible;
+}
+#Rec1_t {
+	fill: transparent;
+	stroke: rgba(59,35,20,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rec1_t {
+	position: absolute;
+	overflow: visible;
+	width: 733px;
+	height: 90px;
+	left: 0px;
+	top: 0px;
+}
+#passwordIcon {
+	fill: transparent;
+	stroke: rgba(59,35,20,0.502);
+	stroke-width: 3px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.passwordIcon {
+	overflow: visible;
+	position: absolute;
+	width: 41.124px;
+	height: 39.838px;
+	left: 36.457px;
+	top: 27.184px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#showPasswordIcon {
+	position: absolute;
+	width: 41.937px;
+	height: 30.5px;
+	left: 677.338px;
+	top: 30.042px;
+	overflow: visible;
+}
+#p1 {
+	fill: transparent;
+	stroke: rgba(59,35,20,0.502);
+	stroke-width: 3px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.p1 {
+	overflow: visible;
+	position: absolute;
+	width: 44.938px;
+	height: 33.5px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#p2 {
+	fill: transparent;
+	stroke: rgba(59,35,20,0.502);
+	stroke-width: 3px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.p2 {
+	overflow: visible;
+	position: absolute;
+	width: 14.438px;
+	height: 14.438px;
+	left: 15.25px;
+	top: 9.531px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Dots {
+	position: absolute;
+	width: 298px;
+	height: 12px;
+	left: 122px;
+	top: 38px;
+	overflow: visible;
+}
+#eclipse {
+	fill: rgba(59,35,20,1);
+}
+.eclipse {
+	position: absolute;
+	overflow: visible;
+	width: 12px;
+	height: 12px;
+	left: 0px;
+	top: 0px;
+}
+#eclipse_ {
+	fill: rgba(59,35,20,1);
+}
+.eclipse_ {
+	position: absolute;
+	overflow: visible;
+	width: 12px;
+	height: 12px;
+	left: 26px;
+	top: 0px;
+}
+#eclipse_ba {
+	fill: rgba(59,35,20,1);
+}
+.eclipse_ba {
+	position: absolute;
+	overflow: visible;
+	width: 12px;
+	height: 12px;
+	left: 52px;
+	top: 0px;
+}
+#eclipse_bb {
+	fill: rgba(59,35,20,1);
+}
+.eclipse_bb {
+	position: absolute;
+	overflow: visible;
+	width: 12px;
+	height: 12px;
+	left: 78px;
+	top: 0px;
+}
+#eclipse_bc {
+	fill: rgba(59,35,20,1);
+}
+.eclipse_bc {
+	position: absolute;
+	overflow: visible;
+	width: 12px;
+	height: 12px;
+	left: 104px;
+	top: 0px;
+}
+#eclipse_bd {
+	fill: rgba(59,35,20,1);
+}
+.eclipse_bd {
+	position: absolute;
+	overflow: visible;
+	width: 12px;
+	height: 12px;
+	left: 130px;
+	top: 0px;
+}
+#eclipse_be {
+	fill: rgba(59,35,20,1);
+}
+.eclipse_be {
+	position: absolute;
+	overflow: visible;
+	width: 12px;
+	height: 12px;
+	left: 156px;
+	top: 0px;
+}
+#eclipse_bf {
+	fill: rgba(59,35,20,1);
+}
+.eclipse_bf {
+	position: absolute;
+	overflow: visible;
+	width: 12px;
+	height: 12px;
+	left: 182px;
+	top: 0px;
+}
+#eclipse_bg {
+	fill: rgba(59,35,20,1);
+}
+.eclipse_bg {
+	position: absolute;
+	overflow: visible;
+	width: 12px;
+	height: 12px;
+	left: 208px;
+	top: 0px;
+}
+#eclipse_bh {
+	fill: rgba(59,35,20,1);
+}
+.eclipse_bh {
+	position: absolute;
+	overflow: visible;
+	width: 12px;
+	height: 12px;
+	left: 234px;
+	top: 0px;
+}
+#eclipse_bi {
+	fill: rgba(59,35,20,1);
+}
+.eclipse_bi {
+	position: absolute;
+	overflow: visible;
+	width: 12px;
+	height: 12px;
+	left: 260px;
+	top: 0px;
+}
+#eclipse_bj {
+	fill: rgba(59,35,20,1);
+}
+.eclipse_bj {
+	position: absolute;
+	overflow: visible;
+	width: 12px;
+	height: 12px;
+	left: 286px;
+	top: 0px;
+}
+#Sofware123210521 {
+	display: none;
+	left: 122px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 324px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(59,35,20,1);
+}
+#Mail {
+	position: absolute;
+	width: 733px;
+	height: 91px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Rec1_bd {
+	fill: transparent;
+	stroke: rgba(59,35,20,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rec1_bd {
+	position: absolute;
+	overflow: visible;
+	width: 733px;
+	height: 91px;
+	left: 0px;
+	top: 0px;
+}
+#mailIcon {
+	position: absolute;
+	width: 37.172px;
+	height: 25.734px;
+	left: 37.76px;
+	top: 33.196px;
+	overflow: visible;
+}
+#p2_bf {
+	fill: rgba(59,35,20,0.502);
+}
+.p2_bf {
+	overflow: visible;
+	position: absolute;
+	width: 35.018px;
+	height: 16.361px;
+	left: 1.081px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#p1_bg {
+	fill: rgba(59,35,20,0.502);
+}
+.p1_bg {
+	overflow: visible;
+	position: absolute;
+	width: 37.172px;
+	height: 22.635px;
+	left: 0px;
+	top: 3.099px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#e-mail {
+	left: 122px;
+	top: 28px;
+	position: absolute;
+	overflow: visible;
+	width: 383px;
+	white-space: nowrap;
+	line-height: 50px;
+	margin-top: -9.5px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 31px;
+	color: rgba(112,112,112,1);
+}
+#MiniLogo {
+	position: absolute;
+	width: 934px;
+	height: 590px;
+	left: 880px;
+	top: -168px;
+	overflow: visible;
+}
+#tobb {
+	position: absolute;
+	width: 934px;
+	height: 456px;
+	left: 0px;
+	top: 134px;
+	overflow: visible;
+}
+#welcomeTo {
+	position: absolute;
+	width: 800px;
+	height: 484px;
+	left: 67px;
+	top: 0px;
+	overflow: visible;
+}
+#Tobb_Logo {
+	position: absolute;
+	width: 233px;
+	height: 234px;
+	left: 320px;
+	top: 63px;
+	overflow: visible;
+}
