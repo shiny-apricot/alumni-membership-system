@@ -1,0 +1,870 @@
+.mediaViewInfo {
+	--web-view-name: Bank Info;
+	--web-view-id: Bank_Info;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Bank_Info;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Bank_Info {
+	position: absolute;
+	width: 1920px;
+	height: 1323px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Bank Info;
+	--web-view-id: Bank_Info;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-enable-deep-linking: true;
+}
+@keyframes  {
+
+
+}
+@keyframes  {
+
+
+}
+@keyframes  {
+
+
+}
+@keyframes  {
+
+
+}
+@keyframes  {
+
+
+}
+#Background_f {
+	fill: rgba(239,241,242,1);
+}
+.Background_f {
+	filter: drop-shadow(0px 2px 30px rgba(0, 0, 0, 0.149));
+	position: absolute;
+	overflow: visible;
+	width: 1575.563px;
+	height: 1103.222px;
+	left: 434.299px;
+	top: 309.64px;
+}
+#Long_Table_f {
+	position: absolute;
+	width: 1466.5px;
+	height: 132.719px;
+	left: 446px;
+	top: 408.781px;
+	overflow: visible;
+}
+#Lines_f {
+	position: absolute;
+	width: 1466.266px;
+	height: 66.483px;
+	left: 0.053px;
+	top: 0px;
+	overflow: visible;
+}
+#line2_ga {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line2_ga {
+	overflow: visible;
+	position: absolute;
+	width: 1466.266px;
+	height: 1px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#line1_gb {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line1_gb {
+	overflow: visible;
+	position: absolute;
+	width: 1466.266px;
+	height: 1px;
+	left: 0px;
+	top: 66.483px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_216_gc {
+	position: absolute;
+	width: 1466.447px;
+	height: 43.5px;
+	left: 0.053px;
+	top: 89.219px;
+	overflow: visible;
+}
+#line3_gd {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line3_gd {
+	overflow: visible;
+	position: absolute;
+	width: 1466.447px;
+	height: 1px;
+	left: 0px;
+	top: 43.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Table_Variables_ge {
+	position: absolute;
+	width: 1034px;
+	height: 24px;
+	left: 21.947px;
+	top: 0px;
+	overflow: visible;
+}
+#cDepartment_gf {
+	left: 180px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 346px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(18,32,37,1);
+}
+#cSurname_gg {
+	left: 708px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 24px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(18,32,37,1);
+}
+#cSurname_gh {
+	left: 965px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 70px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(18,32,37,1);
+}
+#cID_gi {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 109px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(0,0,0,1);
+}
+#Table_Contents_gj {
+	position: absolute;
+	width: 1087px;
+	height: 30px;
+	left: 0px;
+	top: 26.219px;
+	overflow: visible;
+}
+#Dekont_Tarihi {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(146,150,173,1);
+}
+#Aklama {
+	left: 211px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(146,150,173,1);
+}
+#Etiket {
+	left: 579px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 66px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(146,150,173,1);
+}
+#Tutar {
+	left: 717px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(146,150,173,1);
+}
+#Bakiye {
+	left: 841px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 76px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(146,150,173,1);
+}
+#Dekont_NO {
+	left: 966px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 122px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(146,150,173,1);
+}
+#Long_Table_gq {
+	position: absolute;
+	width: 1466.447px;
+	height: 132.719px;
+	left: 446.053px;
+	top: 876.781px;
+	overflow: visible;
+}
+#Lines_gr {
+	position: absolute;
+	width: 1466.266px;
+	height: 66.483px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#line2_gs {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line2_gs {
+	overflow: visible;
+	position: absolute;
+	width: 1466.266px;
+	height: 1px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#line1_gt {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line1_gt {
+	overflow: visible;
+	position: absolute;
+	width: 1466.266px;
+	height: 1px;
+	left: 0px;
+	top: 66.483px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_216_gu {
+	position: absolute;
+	width: 1466.447px;
+	height: 43.5px;
+	left: 0px;
+	top: 89.219px;
+	overflow: visible;
+}
+#line3_gv {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line3_gv {
+	overflow: visible;
+	position: absolute;
+	width: 1466.447px;
+	height: 1px;
+	left: 0px;
+	top: 43.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Table_Variables_gw {
+	position: absolute;
+	width: 705px;
+	height: 24px;
+	left: 12.947px;
+	top: 0px;
+	overflow: visible;
+}
+#cDepartment_gx {
+	left: 151px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 47px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(18,32,37,1);
+}
+#cSurname_gy {
+	left: 416px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 36px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(18,32,37,1);
+}
+#cSurname_gz {
+	left: 670px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 36px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(18,32,37,1);
+}
+#cID_g {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 47px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(0,0,0,1);
+}
+#Table_Contents_g {
+	position: absolute;
+	width: 753px;
+	height: 30px;
+	left: 18.947px;
+	top: 26.219px;
+	overflow: visible;
+}
+#ID_g {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 25px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(146,150,173,1);
+}
+#Yl_Year {
+	left: 141px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(146,150,173,1);
+}
+#Yllk_Aidat {
+	left: 362px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 124px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(146,150,173,1);
+}
+#denen_Aidat {
+	left: 602px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 152px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(146,150,173,1);
+}
+#Rectangle_128_g {
+	fill: rgba(2,51,107,1);
+	stroke: rgba(0,0,0,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_128_g {
+	position: absolute;
+	overflow: visible;
+	width: 246px;
+	height: 58px;
+	left: 1054px;
+	top: 333px;
+}
+#Rectangle_132 {
+	fill: rgba(2,51,107,1);
+	stroke: rgba(0,0,0,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_132 {
+	position: absolute;
+	overflow: visible;
+	width: 184px;
+	height: 58px;
+	left: 981px;
+	top: 787px;
+}
+#Rectangle_129 {
+	fill: rgba(2,51,107,1);
+	stroke: rgba(0,0,0,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_129 {
+	position: absolute;
+	overflow: visible;
+	width: 178px;
+	height: 58px;
+	left: 698px;
+	top: 787px;
+}
+#Rectangle_130 {
+	fill: rgba(35,31,32,1);
+	stroke: rgba(0,0,0,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_130 {
+	position: absolute;
+	overflow: visible;
+	width: 65px;
+	height: 58px;
+	left: 876px;
+	top: 787px;
+}
+#Dekont_Ykle {
+	left: 1105px;
+	top: 350px;
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	white-space: nowrap;
+	line-height: 23px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 1px;
+}
+#Yeni_Yl_Ekle_Add_New_Year {
+	left: 996px;
+	top: 792px;
+	position: absolute;
+	overflow: visible;
+	width: 155px;
+	white-space: nowrap;
+	line-height: 23px;
+	margin-top: -1px;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 1px;
+}
+#YIL_SE {
+	left: 744px;
+	top: 804px;
+	position: absolute;
+	overflow: visible;
+	width: 88px;
+	white-space: nowrap;
+	line-height: 23px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 1px;
+}
+#V {
+	left: 902px;
+	top: 804px;
+	position: absolute;
+	overflow: visible;
+	width: 14px;
+	white-space: nowrap;
+	line-height: 23px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 1px;
+}
+#YILLAR {
+	left: 446px;
+	top: 782px;
+	position: absolute;
+	overflow: visible;
+	width: 187px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 56px;
+	color: rgba(0,0,0,1);
+}
+#headPart_hf {
+	position: absolute;
+	width: 1920px;
+	height: 782px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Header_hg {
+	fill: rgba(248,149,30,1);
+}
+.Header_hg {
+	filter: drop-shadow(0px 2px 30px rgba(0, 0, 0, 0.102));
+	overflow: visible;
+	position: absolute;
+	width: 2010px;
+	height: 390px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Tobb_Logo_hh {
+	position: absolute;
+	width: 197px;
+	height: 196px;
+	left: 1653px;
+	top: 52px;
+	overflow: visible;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Home.html;
+	cursor: pointer;
+}
+#SearchBar_hi {
+	position: absolute;
+	width: 853.086px;
+	height: 47.022px;
+	left: 492.104px;
+	top: 126px;
+	overflow: visible;
+}
+#Rec1_hj {
+	fill: rgba(255,255,255,1);
+}
+.Rec1_hj {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.102));
+	position: absolute;
+	overflow: visible;
+	width: 796.74px;
+	height: 65.022px;
+	left: 74.345px;
+	top: 0px;
+}
+#searchIcon_hk {
+	fill: rgba(255,255,255,1);
+}
+.searchIcon_hk {
+	overflow: visible;
+	position: absolute;
+	width: 37.896px;
+	height: 37.896px;
+	left: 0px;
+	top: 5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#searchType_hl {
+	left: 118.896px;
+	top: 11px;
+	position: absolute;
+	overflow: visible;
+	width: 157px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(77,79,92,1);
+}
+#AdminProfile_hm {
+	position: absolute;
+	width: 262px;
+	height: 216px;
+	left: 87px;
+	top: 42px;
+	overflow: visible;
+}
+#adminLevel_hn {
+	left: 88px;
+	top: 183px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 27px;
+	color: rgba(59,35,20,1);
+	letter-spacing: 0.1px;
+}
+#adminUsername_ho {
+	left: 0px;
+	top: 144px;
+	position: absolute;
+	overflow: visible;
+	width: 263px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.1px;
+}
+#PhotoBackground_hp {
+	filter: drop-shadow(0px 3px 30px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	width: 112px;
+	height: 112px;
+	left: 76px;
+	top: 0px;
+	overflow: visible;
+}
+#MenuItems_hq {
+	position: absolute;
+	width: 211px;
+	height: 437px;
+	left: 93px;
+	top: 345px;
+	overflow: visible;
+}
+#menuItem5_hr {
+	left: 1px;
+	top: 398px;
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	white-space: nowrap;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Login.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#menuItem4_hs {
+	left: 1px;
+	top: 298.5px;
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	white-space: nowrap;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Settings.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#menuItem3_ht {
+	left: 0px;
+	top: 199px;
+	position: absolute;
+	overflow: visible;
+	width: 212px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#menuItem2_hu {
+	left: 0px;
+	top: 99.5px;
+	position: absolute;
+	overflow: visible;
+	width: 193px;
+	white-space: nowrap;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Detailed_Table.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#selectedMenuItem_hv {
+	left: 2px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	white-space: nowrap;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Home.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}

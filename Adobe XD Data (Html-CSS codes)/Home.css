@@ -1,0 +1,1279 @@
+.mediaViewInfo {
+	--web-view-name: Home;
+	--web-view-id: Home;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Home;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Home {
+	position: absolute;
+	width: 1920px;
+	height: 1323px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Home;
+	--web-view-id: Home;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-enable-deep-linking: true;
+}
+@keyframes  {
+
+
+}
+@keyframes  {
+
+
+}
+@keyframes  {
+
+
+}
+@keyframes  {
+
+
+}
+#Background {
+	fill: rgba(239,241,242,1);
+}
+.Background {
+	filter: drop-shadow(0px 2px 30px rgba(0, 0, 0, 0.149));
+	position: absolute;
+	overflow: visible;
+	width: 1575.563px;
+	height: 1121.222px;
+	left: 434.299px;
+	top: 291.64px;
+}
+#tobbMiniLogo {
+	position: absolute;
+	width: 304px;
+	height: 148px;
+	left: 1078px;
+	top: 782px;
+	overflow: visible;
+}
+#PopularOccupations {
+	position: absolute;
+	width: 535.278px;
+	height: 317.628px;
+	left: 464.589px;
+	top: 821px;
+	overflow: visible;
+}
+#Statistics {
+	position: absolute;
+	width: 242.063px;
+	height: 156px;
+	left: 293.215px;
+	top: 78.684px;
+	overflow: visible;
+}
+#pOccupations {
+	position: absolute;
+	width: 216px;
+	height: 18px;
+	left: 26.064px;
+	top: 0px;
+	overflow: visible;
+}
+#peopleNumber {
+	opacity: 0.85;
+	left: 158px;
+	top: 1px;
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(67,66,93,1);
+}
+#popularOccupation {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 124px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#pOccupations_bv {
+	position: absolute;
+	width: 216px;
+	height: 18px;
+	left: 26.064px;
+	top: 46px;
+	overflow: visible;
+}
+#peopleNumber_bw {
+	opacity: 0.85;
+	left: 158px;
+	top: 1px;
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(67,66,93,1);
+}
+#popularOccupation_bx {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 92px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#pOccupations_by {
+	position: absolute;
+	width: 216px;
+	height: 18px;
+	left: 26.064px;
+	top: 92px;
+	overflow: visible;
+}
+#peopleNumber_bz {
+	opacity: 0.85;
+	left: 158px;
+	top: 1px;
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(67,66,93,1);
+}
+#popularOccupation_b {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 83px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#pOccupations_b {
+	position: absolute;
+	width: 216px;
+	height: 18px;
+	left: 26.064px;
+	top: 138px;
+	overflow: visible;
+}
+#peopleNumber_b {
+	opacity: 0.85;
+	left: 158px;
+	top: 1px;
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(67,66,93,1);
+}
+#popularOccupation_ca {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 93px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#eclipses {
+	position: absolute;
+	width: 17.376px;
+	height: 154.209px;
+	left: 0px;
+	top: 0.086px;
+	overflow: visible;
+}
+#purpleEllipse {
+	fill: transparent;
+	stroke: rgba(255,131,115,1);
+	stroke-width: 3px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.purpleEllipse {
+	position: absolute;
+	overflow: visible;
+	width: 17.376px;
+	height: 17.376px;
+	left: 0px;
+	top: 136.834px;
+}
+#yellowEllipse {
+	fill: transparent;
+	stroke: rgba(255,218,131,1);
+	stroke-width: 3px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.yellowEllipse {
+	position: absolute;
+	overflow: visible;
+	width: 17.376px;
+	height: 17.376px;
+	left: 0px;
+	top: 91.222px;
+}
+#redEllipse {
+	fill: transparent;
+	stroke: rgba(163,160,251,1);
+	stroke-width: 3px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.redEllipse {
+	position: absolute;
+	overflow: visible;
+	width: 17.376px;
+	height: 17.376px;
+	left: 0px;
+	top: 45.611px;
+}
+#blueEclipse {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(85,216,254,1);
+	stroke-width: 3px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.blueEclipse {
+	position: absolute;
+	overflow: visible;
+	width: 17.376px;
+	height: 17.376px;
+	left: 0px;
+	top: 0px;
+}
+#pieChart {
+	position: absolute;
+	width: 260.635px;
+	height: 260.635px;
+	left: 0px;
+	top: 56.993px;
+	overflow: visible;
+}
+#pieChart_ca {
+	position: absolute;
+	width: 260.635px;
+	height: 260.635px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#ID90_People {
+	left: 102.411px;
+	top: 103.007px;
+	position: absolute;
+	overflow: visible;
+	width: 55px;
+	white-space: nowrap;
+	line-height: 30px;
+	margin-top: -5.5px;
+	text-align: center;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	color: rgba(77,79,92,1);
+}
+#GRAFK_POPLER_BLMLER {
+	left: 0.411px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 351px;
+	white-space: nowrap;
+	line-height: 23px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(146,150,173,1);
+	letter-spacing: 1px;
+}
+#MenuTable {
+	position: absolute;
+	width: 519.196px;
+	height: 60px;
+	left: 1389px;
+	top: 522px;
+	overflow: visible;
+}
+#Table_Variables {
+	position: absolute;
+	width: 519.196px;
+	height: 25.172px;
+	left: 0px;
+	top: 34.828px;
+	overflow: visible;
+}
+#line1 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line1 {
+	overflow: visible;
+	position: absolute;
+	width: 519.196px;
+	height: 1px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#cFee {
+	left: 379px;
+	top: 0.172px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(18,32,37,1);
+}
+#cSurname {
+	left: 212px;
+	top: 0.172px;
+	position: absolute;
+	overflow: visible;
+	width: 56px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(18,32,37,1);
+}
+#cName {
+	left: 37px;
+	top: 0.172px;
+	position: absolute;
+	overflow: visible;
+	width: 63px;
+	white-space: nowrap;
+	line-height: 27px;
+	margin-top: -3px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(18,32,37,1);
+}
+#Table_Contents {
+	position: absolute;
+	width: 445px;
+	height: 25px;
+	left: 37px;
+	top: 0px;
+	overflow: visible;
+}
+#Kalan_Bor {
+	left: 343px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 103px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(146,150,173,1);
+}
+#Soyad {
+	left: 175px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(146,150,173,1);
+}
+#Ad {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 26px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(146,150,173,1);
+}
+#DonationsInfo {
+	position: absolute;
+	width: 789px;
+	height: 206.142px;
+	left: 483px;
+	top: 538px;
+	overflow: visible;
+}
+#TopDonations {
+	position: absolute;
+	width: 198px;
+	height: 206.142px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#profile {
+	position: absolute;
+	width: 168.419px;
+	height: 59.007px;
+	left: 0.097px;
+	top: 147.135px;
+	overflow: visible;
+}
+#cID {
+	left: 72.419px;
+	top: 32.752px;
+	position: absolute;
+	overflow: visible;
+	width: 97px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	color: rgba(77,79,92,1);
+}
+#topDonatedName {
+	left: 71.895px;
+	top: 5.29px;
+	position: absolute;
+	overflow: visible;
+	width: 93px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(77,79,92,1);
+}
+#topDonationsPicture {
+	filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	width: 59.007px;
+	height: 59.007px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#topDonationBalance {
+	left: 62px;
+	top: 64px;
+	position: absolute;
+	overflow: visible;
+	width: 126px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#up_Icon {
+	fill: rgba(89,245,188,1);
+}
+.up_Icon {
+	overflow: visible;
+	position: absolute;
+	width: 28.596px;
+	height: 28.596px;
+	transform: translate(-578px, -805px) matrix(1,0,0,1,584.0202,878.8757) rotate(-45deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+#EN_YKSEK_BOR {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 199px;
+	white-space: nowrap;
+	line-height: 23px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(146,150,173,1);
+	letter-spacing: 1px;
+}
+#LastDonation {
+	position: absolute;
+	width: 223px;
+	height: 206.142px;
+	left: 288px;
+	top: 0px;
+	overflow: visible;
+}
+#profile_cx {
+	position: absolute;
+	width: 168.419px;
+	height: 59.007px;
+	left: 0.097px;
+	top: 147.135px;
+	overflow: visible;
+}
+#cID_cy {
+	left: 72.419px;
+	top: 32.752px;
+	position: absolute;
+	overflow: visible;
+	width: 97px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	color: rgba(77,79,92,1);
+}
+#topDonatedName_cz {
+	left: 71.895px;
+	top: 5.29px;
+	position: absolute;
+	overflow: visible;
+	width: 93px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(77,79,92,1);
+}
+#topDonationPicture {
+	filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	width: 59.007px;
+	height: 59.007px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#lastDonationBalance {
+	left: 62px;
+	top: 64px;
+	position: absolute;
+	overflow: visible;
+	width: 126px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#up_Icon_c {
+	fill: rgba(89,245,188,1);
+}
+.up_Icon_c {
+	overflow: visible;
+	position: absolute;
+	width: 28.596px;
+	height: 28.596px;
+	transform: translate(0.098px, 64.395px) matrix(1,0,0,1,5.9224,9.4809) rotate(-45deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+#SON_DENEN_ADAT {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	white-space: nowrap;
+	line-height: 23px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(146,150,173,1);
+	letter-spacing: 1px;
+}
+#LowestFee {
+	position: absolute;
+	width: 215px;
+	height: 206.142px;
+	left: 574px;
+	top: 0px;
+	overflow: visible;
+}
+#profile_c {
+	position: absolute;
+	width: 168.419px;
+	height: 59.007px;
+	left: 0.097px;
+	top: 147.135px;
+	overflow: visible;
+}
+#cID_c {
+	left: 72.419px;
+	top: 32.752px;
+	position: absolute;
+	overflow: visible;
+	width: 97px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	color: rgba(77,79,92,1);
+}
+#topDonatedName_c {
+	left: 71.895px;
+	top: 5.29px;
+	position: absolute;
+	overflow: visible;
+	width: 93px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(77,79,92,1);
+}
+#topDonationsPicture_c {
+	filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	width: 59.007px;
+	height: 59.007px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#lowestFeeBalance {
+	left: 64px;
+	top: 64px;
+	position: absolute;
+	overflow: visible;
+	width: 126px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#down_Icon {
+	fill: rgba(228,49,55,1);
+}
+.down_Icon {
+	overflow: visible;
+	position: absolute;
+	width: 28.596px;
+	height: 28.596px;
+	transform: translate(2.098px, 64.395px) matrix(1,0,0,1,5.9224,9.4809) rotate(135deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+#EN_DK_BOR____ {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 216px;
+	white-space: nowrap;
+	line-height: 23px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(146,150,173,1);
+	letter-spacing: 1px;
+}
+#Balance {
+	position: absolute;
+	width: 230.243px;
+	height: 107.335px;
+	left: 1372px;
+	top: 365px;
+	overflow: visible;
+}
+#balanceBalance {
+	left: 96.243px;
+	top: 53.335px;
+	position: absolute;
+	overflow: visible;
+	width: 135px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 45px;
+	color: rgba(18,32,37,1);
+}
+#balanceVector {
+	fill: rgba(89,245,188,1);
+}
+.balanceVector {
+	overflow: visible;
+	position: absolute;
+	width: 61.225px;
+	height: 32.757px;
+	left: 0.304px;
+	top: 67.539px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#balance {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 92px;
+	white-space: nowrap;
+	line-height: 23px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(146,150,173,1);
+	letter-spacing: 1px;
+}
+#Donations {
+	position: absolute;
+	width: 257.063px;
+	height: 109px;
+	left: 925px;
+	top: 365px;
+	overflow: visible;
+}
+#donationsBalance {
+	left: 90.063px;
+	top: 53.335px;
+	position: absolute;
+	overflow: visible;
+	width: 168px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 45px;
+	color: rgba(18,32,37,1);
+}
+#donationsLogo {
+	position: absolute;
+	width: 50px;
+	height: 51px;
+	left: 8px;
+	top: 58px;
+	overflow: visible;
+}
+#donations {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 199px;
+	white-space: nowrap;
+	line-height: 23px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(146,150,173,1);
+	letter-spacing: 1px;
+}
+#TotalIncome {
+	position: absolute;
+	width: 255.315px;
+	height: 113.738px;
+	left: 496px;
+	top: 365px;
+	overflow: visible;
+}
+#totalIncomeBalance {
+	left: 88.315px;
+	top: 53.335px;
+	position: absolute;
+	overflow: visible;
+	width: 168px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 45px;
+	color: rgba(18,32,37,1);
+}
+#incomeVector {
+	position: absolute;
+	width: 68.608px;
+	height: 61.403px;
+	left: 0.864px;
+	top: 52.335px;
+	overflow: visible;
+}
+#p1_dn {
+	fill: rgba(228,49,55,1);
+}
+.p1_dn {
+	overflow: visible;
+	position: absolute;
+	width: 68.608px;
+	height: 61.403px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#p2_do {
+	fill: rgba(228,49,55,1);
+}
+.p2_do {
+	overflow: visible;
+	position: absolute;
+	width: 23.42px;
+	height: 37.782px;
+	left: 18.994px;
+	top: 11.821px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#totalIncome {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 194px;
+	white-space: nowrap;
+	line-height: 23px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(146,150,173,1);
+	letter-spacing: 1px;
+}
+#MenuLines {
+	position: absolute;
+	width: 1440.785px;
+	height: 703.554px;
+	left: 464.715px;
+	top: 513.304px;
+	overflow: visible;
+}
+#line5 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line5 {
+	overflow: visible;
+	position: absolute;
+	width: 272.001px;
+	height: 1.359px;
+	left: 639.785px;
+	top: 452.196px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#line4 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line4 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 432.22px;
+	left: 640.05px;
+	top: 271.334px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#line3 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line3 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 452.196px;
+	left: 912.224px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#line2 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line2 {
+	overflow: visible;
+	position: absolute;
+	width: 911.785px;
+	height: 1px;
+	left: 0px;
+	top: 271.334px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#line1_dv {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line1_dv {
+	overflow: visible;
+	position: absolute;
+	width: 1440.785px;
+	height: 1.196px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#headPart {
+	position: absolute;
+	width: 1920px;
+	height: 782px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#MenuItems {
+	position: absolute;
+	width: 211px;
+	height: 437px;
+	left: 93px;
+	top: 345px;
+	overflow: visible;
+}
+#menuItem5 {
+	left: 1px;
+	top: 398px;
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	white-space: nowrap;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Login.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#menuItem4 {
+	left: 1px;
+	top: 298.5px;
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	white-space: nowrap;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Settings.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#menuItem3 {
+	left: 0px;
+	top: 199px;
+	position: absolute;
+	overflow: visible;
+	width: 212px;
+	white-space: nowrap;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Bank_Info.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#menuItem2 {
+	left: 0px;
+	top: 99.5px;
+	position: absolute;
+	overflow: visible;
+	width: 193px;
+	white-space: nowrap;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Detailed_Table.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#selectedMenuItem {
+	left: 2px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#Header {
+	fill: rgba(248,149,30,1);
+}
+.Header {
+	filter: drop-shadow(0px 2px 30px rgba(0, 0, 0, 0.102));
+	overflow: visible;
+	position: absolute;
+	width: 2010px;
+	height: 390px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Tobb_Logo_d {
+	position: absolute;
+	width: 197px;
+	height: 196px;
+	left: 1653px;
+	top: 52px;
+	overflow: visible;
+}
+#SearchBar {
+	position: absolute;
+	width: 853.086px;
+	height: 47.022px;
+	left: 492.104px;
+	top: 126px;
+	overflow: visible;
+}
+#Rec1_d {
+	fill: rgba(255,255,255,1);
+}
+.Rec1_d {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.102));
+	position: absolute;
+	overflow: visible;
+	width: 796.74px;
+	height: 65.022px;
+	left: 74.346px;
+	top: 0px;
+}
+#searchIcon {
+	fill: rgba(255,255,255,1);
+}
+.searchIcon {
+	overflow: visible;
+	position: absolute;
+	width: 37.896px;
+	height: 37.896px;
+	left: 0px;
+	top: 5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#searchType {
+	left: 118.896px;
+	top: 11px;
+	position: absolute;
+	overflow: visible;
+	width: 157px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(77,79,92,1);
+}
+#AdminProfile {
+	position: absolute;
+	width: 262px;
+	height: 216px;
+	left: 87px;
+	top: 42px;
+	overflow: visible;
+}
+#adminLevel {
+	left: 88px;
+	top: 183px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 27px;
+	color: rgba(59,35,20,1);
+	letter-spacing: 0.1px;
+}
+#adminUsername {
+	left: 0px;
+	top: 144px;
+	position: absolute;
+	overflow: visible;
+	width: 263px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.1px;
+}
+#PhotoBackground {
+	filter: drop-shadow(0px 3px 30px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	width: 112px;
+	height: 112px;
+	left: 76px;
+	top: 0px;
+	overflow: visible;
+}

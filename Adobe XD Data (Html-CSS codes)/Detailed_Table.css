@@ -1,0 +1,886 @@
+.mediaViewInfo {
+	--web-view-name: Detailed Table;
+	--web-view-id: Detailed_Table;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Detailed_Table;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Detailed_Table {
+	position: absolute;
+	width: 1920px;
+	height: 1323px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Detailed Table;
+	--web-view-id: Detailed_Table;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-enable-deep-linking: true;
+}
+@keyframes  {
+
+
+}
+@keyframes  {
+
+
+}
+@keyframes  {
+
+
+}
+@keyframes  {
+
+
+}
+@keyframes  {
+
+
+}
+#Background_ef {
+	fill: rgba(239,241,242,1);
+}
+.Background_ef {
+	filter: drop-shadow(0px 2px 30px rgba(0, 0, 0, 0.149));
+	position: absolute;
+	overflow: visible;
+	width: 1575.563px;
+	height: 1249.222px;
+	left: 434.299px;
+	top: 204.64px;
+}
+#Long_Table {
+	position: absolute;
+	width: 1466.947px;
+	height: 132.719px;
+	left: 446.053px;
+	top: 408.781px;
+	overflow: visible;
+}
+#Lines {
+	position: absolute;
+	width: 1466.266px;
+	height: 66.483px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#line2_ei {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line2_ei {
+	overflow: visible;
+	position: absolute;
+	width: 1466.266px;
+	height: 1px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#line1_ej {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line1_ej {
+	overflow: visible;
+	position: absolute;
+	width: 1466.266px;
+	height: 1px;
+	left: 0px;
+	top: 66.483px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_216 {
+	position: absolute;
+	width: 1466.447px;
+	height: 43.5px;
+	left: 0px;
+	top: 89.219px;
+	overflow: visible;
+}
+#line3_el {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.line3_el {
+	overflow: visible;
+	position: absolute;
+	width: 1466.447px;
+	height: 1px;
+	left: 0px;
+	top: 43.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Table_Variables_em {
+	position: absolute;
+	width: 1453px;
+	height: 30px;
+	left: 12.947px;
+	top: 0px;
+	overflow: visible;
+}
+#cFee_en {
+	left: 1307px;
+	top: 2px;
+	position: absolute;
+	overflow: visible;
+	width: 147px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	color: rgba(18,32,37,1);
+}
+#cIBAN {
+	left: 822px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 98px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cIBAN_ep {
+	left: 932px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 44px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cIBAN_eq {
+	left: 978px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 44px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cIBAN_er {
+	left: 1039px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 31px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cIBAN_es {
+	left: 1139px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 29px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cIBAN_et {
+	left: 1211px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 71px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cContact_E-Mail {
+	left: 738px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 76px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cContact_Number {
+	left: 646px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 71px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cAddress {
+	left: 551px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 83px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cAddress_ex {
+	left: 444px;
+	top: 10px;
+	position: absolute;
+	overflow: visible;
+	width: 101px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 9px;
+	color: rgba(18,32,37,1);
+}
+#cOccupation {
+	left: 335px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 100px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cDepartment {
+	left: 212px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 39px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cDepartment_e {
+	left: 276px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 35px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cSurname_e {
+	left: 145px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 34px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cName_e {
+	left: 44px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 68px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -0.5px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(18,32,37,1);
+}
+#cID_e {
+	left: 0px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 31px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(0,0,0,1);
+}
+#Table_Contents_e {
+	position: absolute;
+	width: 1448px;
+	height: 36px;
+	left: 18.947px;
+	top: 17.219px;
+	overflow: visible;
+}
+#ID {
+	left: 0px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 15px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#ye_No {
+	left: 46px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#Cinsiyet {
+	left: 127px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 56px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#Ad_e {
+	left: 214px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 19px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#Soyad_e {
+	left: 264px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 43px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#alt_Yer {
+	left: 338px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 83px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#Mail_fb {
+	left: 472px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 30px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#TC {
+	left: 559px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 19px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#Mezuniyet_____Tarihi {
+	left: 635px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 71px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#Blm {
+	left: 737px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 53px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#Telefon {
+	left: 821px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#Adres {
+	left: 927px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 40px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#l {
+	left: 989px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 10px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#Kalan_Bor_fi {
+	left: 1015px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 74px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#___ye_Durumu {
+	left: 1120px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 54px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#ye_Giri____Tarihi {
+	left: 1205px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 62px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#__________ye_Durumu_Hakknda_Bi {
+	left: 1291px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 158px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(146,150,173,1);
+}
+#Rectangle_128 {
+	fill: rgba(2,51,107,1);
+	stroke: rgba(0,0,0,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_128 {
+	position: absolute;
+	overflow: visible;
+	width: 246px;
+	height: 58px;
+	left: 1054px;
+	top: 333px;
+}
+#Tabloyu_Dzenle {
+	left: 1082px;
+	top: 350px;
+	position: absolute;
+	overflow: visible;
+	width: 192px;
+	white-space: nowrap;
+	line-height: 23px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 1px;
+}
+#headPart_fo {
+	position: absolute;
+	width: 1920px;
+	height: 782px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#MenuItems_fp {
+	position: absolute;
+	width: 211px;
+	height: 437px;
+	left: 93px;
+	top: 345px;
+	overflow: visible;
+}
+#menuItem5_fq {
+	left: 1px;
+	top: 398px;
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	white-space: nowrap;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Login.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#menuItem4_fr {
+	left: 1px;
+	top: 298.5px;
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	white-space: nowrap;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Bank_Info.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#menuItem3_fs {
+	left: 0px;
+	top: 199px;
+	position: absolute;
+	overflow: visible;
+	width: 212px;
+	white-space: nowrap;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Bank_Info.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#menuItem2_ft {
+	left: 0px;
+	top: 99.5px;
+	position: absolute;
+	overflow: visible;
+	width: 193px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#selectedMenuItem_fu {
+	left: 2px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	white-space: nowrap;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Home.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	color: rgba(0,0,0,1);
+}
+#Header_fv {
+	fill: rgba(248,149,30,1);
+}
+.Header_fv {
+	filter: drop-shadow(0px 2px 30px rgba(0, 0, 0, 0.102));
+	overflow: visible;
+	position: absolute;
+	width: 2010px;
+	height: 390px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Tobb_Logo_fw {
+	position: absolute;
+	width: 197px;
+	height: 196px;
+	left: 1653px;
+	top: 52px;
+	overflow: visible;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: Home.html;
+	cursor: pointer;
+}
+#SearchBar_fx {
+	position: absolute;
+	width: 853.086px;
+	height: 47.022px;
+	left: 492.104px;
+	top: 126px;
+	overflow: visible;
+}
+#Rec1_fy {
+	fill: rgba(255,255,255,1);
+}
+.Rec1_fy {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.102));
+	position: absolute;
+	overflow: visible;
+	width: 796.74px;
+	height: 65.022px;
+	left: 74.345px;
+	top: 0px;
+}
+#searchIcon_fz {
+	fill: rgba(255,255,255,1);
+}
+.searchIcon_fz {
+	overflow: visible;
+	position: absolute;
+	width: 37.896px;
+	height: 37.896px;
+	left: 0px;
+	top: 5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#searchType_f {
+	left: 118.896px;
+	top: 11px;
+	position: absolute;
+	overflow: visible;
+	width: 157px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(77,79,92,1);
+}
+#AdminProfile_f {
+	position: absolute;
+	width: 262px;
+	height: 216px;
+	left: 87px;
+	top: 42px;
+	overflow: visible;
+}
+#adminLevel_f {
+	left: 88px;
+	top: 183px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 27px;
+	color: rgba(59,35,20,1);
+	letter-spacing: 0.1px;
+}
+#adminUsername_f {
+	left: 0px;
+	top: 144px;
+	position: absolute;
+	overflow: visible;
+	width: 263px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.1px;
+}
+#PhotoBackground_f {
+	filter: drop-shadow(0px 3px 30px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	width: 112px;
+	height: 112px;
+	left: 76px;
+	top: 0px;
+	overflow: visible;
+}
