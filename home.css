@@ -290,13 +290,11 @@ th {
 }
 
 #fancyfigures {
-  padding: 50px 67px;
+  padding: 0px 0px;
 }
 
 .pie {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  background: #35dbeb;
-  background-image: linear-gradient(to right, transparent 50%, #bdb2ff 0);
+  mix-blend-mode: multiply;
 }
