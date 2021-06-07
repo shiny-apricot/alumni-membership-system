@@ -1,5 +1,5 @@
 body {
-  font-family: calibri;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   zoom: 100%;
 }
@@ -91,7 +91,7 @@ input[type="text"] {
   flex-direction: column;
   justify-content: center;
   background-color: #ffffff;
-  font-family: candara;
+  font-family: "Roboto", sans-serif;
   width: 17%;
   height: 30em;
   font-size: 17px;
@@ -103,7 +103,7 @@ input[type="text"] {
 #aul {
   justify-content: center;
   background-color: #ffffff;
-  font-family: candara;
+  font-family: "Roboto", sans-serif;
   width: 17%;
   height: 40em;
   font-size: 17px;
@@ -290,11 +290,13 @@ th {
 }
 
 #fancyfigures {
-  padding: 0px 0px;
+  padding: 50px 67px;
 }
 
 .pie {
   width: 200px;
   height: 200px;
-  mix-blend-mode: multiply;
+  border-radius: 50%;
+  background: #35dbeb;
+  background-image: linear-gradient(to right, transparent 50%, #bdb2ff 0);
 }
