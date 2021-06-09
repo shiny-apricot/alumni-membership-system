@@ -299,6 +299,7 @@ th {
   border-radius: 50%;
   background: #35dbeb;
   background-image: linear-gradient(to right, transparent 50%, #bdb2ff 0);
+  mix-blend-mode: multiply;
 }
 
 #divide {

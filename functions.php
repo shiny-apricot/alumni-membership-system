@@ -1,5 +1,7 @@
 <?php
 
+include('server.php');
+
 function check_login($con)
 {
     if(isset($_SESSION['user_id']))
@@ -37,5 +39,7 @@ function random_num($length)
     }
     return $text;
 }
+
+
 
 ?>
