@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="table.html" />
-    <link rel="stylesheet" href="bank.html" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     />
     <link rel="stylesheet" href="home.css" />
-    <title>Ilker</title>
+    <title>Home</title>
   </head>
   <body>
     <div id="header">
@@ -39,8 +42,9 @@
         <li><a style="font-weight: bold" href="#">Home</a></li>
         <li><a href="table.html">Detailed Table</a></li>
         <li><a href="bank.html">Bank Information</a></li>
-        <li><a href="admins.html">Admina</a></li>
-        <li><a href="logout.php">Log Out</a></li>
+        <li><a href="admins.html">Admins</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="#">Log Out</a></li>
       </ul>
       <section id="statistics">
         <div id="ms">
@@ -116,46 +120,8 @@
               <!-- 
                 you may add the pie chart here
                -->
-               <link rel="stylesheet" href="home.css">
-               <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>  
-               <script type="text/javascript">  
-               google.charts.load('current', {'packages':['corechart']});  
-               google.charts.setOnLoadCallback(drawChart);
- 
-               function drawChart()  
-               {  
-                 var data = google.visualization.arrayToDataTable([  
-                           ['Department',           'Number'],  
-                           ['Economics',               17],
-                           ['International Relations', 15],
-                           ['Business Administration', 23],
-                           ['Software Engineering',    35]
-                      ]);  
-                 var options = {
-                       width: 500,
-                       height: 500,  
-                       pieHole: 0.6,
-                       pieSliceText: 'label',
-                       pieSliceTextStyle: {
-                          color: 'black',
-                          },
-                          textStyle: {
-                          fontSize: 4
-                          },
-                          chartArea:{
-                           left:100,
-                           top:50,
-                           width:"65%",
-                           height:"65%"
-                         }
-                      };  
-                      
-                 var chart = new google.visualization.PieChart(document.getElementById('piechart'));  
-                 chart.draw(data, options);  
-               }
-                 </script>
-                     <div id="piechart" class="pie"></div>
-                 </div>
+              <div class="pie"></div>
+            </div>
           </section>
           <aside id="list">
             <table>
