@@ -2,7 +2,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-image: url("Back.png");
+  background-image: url("image/Back.png");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: sans-serif;
@@ -11,15 +11,15 @@ html {
 }
 
 #tobb {
-  height: 180px;
+  height: 80px;
 }
 #welcom {
-  height: 150px;
+  height: 80px;
 }
 #header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:space-between;
 }
 
 #empty {
@@ -29,11 +29,16 @@ html {
 #logo {
   height: 100px;
   margin: 40px 0px;
+  left: 10%;
+  top: 5%;
+  position: absolute;
 }
 
 #intro {
   display: flex;
   flex-direction: column;
+  margin-top: 5%;
+  margin-right: 10%;
 }
 
 img {
@@ -43,8 +48,8 @@ img {
   width: 400px;
   height: 470px;
   color: #fff;
-  top: 55%;
-  left: 30%;
+  top: 70%;
+  left: 23%;
   position: absolute;
   transform: translate(-50%, -50%);
   box-sizing: border-box;

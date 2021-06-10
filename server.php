@@ -66,7 +66,7 @@
         $password1 = $_POST['password1'];
         $password2 = $_POST['password2'];
 
-        // ensure that form fields are fileld properly
+        // ensure that form fields are filled properly
         if(empty($username))
         {
             array_push($errors, "Username is required");
@@ -97,7 +97,7 @@
             pg_query($db, $sql);
             $_SESSION['username'] = $username;
             $_SESSION['success'] = "You are now logged in";
-            header('location: homepage.html'); //redirect to home page 
+            header('location: home.php'); //redirect to home page 
         }    
     }
 
@@ -120,23 +120,23 @@
 
         if(count($errors)==0){
             $password = md5($password); //encrypt password before comparing with that from database
-            $query = "SELECT * FROM user_table WHERE username = 'admin' AND password = '21232f297a57a5a743894a0e4a801fc3'";
+            $query = "SELECT * FROM user_table WHERE username = '$username' AND password = '$password'";
 
 
-            echo "$password <br>";
-            echo "$username <br>";
+            // echo "$password <br>";
+            // echo "$username <br>";
 
              // $result = mysqli_query($db, $query);
             $result = pg_query($db, $query);
-            echo "$result <br>";
+            // echo "$result <br>";
 
-            echo pg_num_rows($result);
+            // echo pg_num_rows($result);
             
             if(pg_num_rows($result) >= 1){
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = "You are now logged in";
                 echo "successfull";
-                header('location: home.html'); //redirect to home page 
+                header('location: home.php'); //redirect to home page 
             }
             else{
                 array_push($errors, "Wrong username/password combination.!");
