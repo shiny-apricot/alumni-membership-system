@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+  <title> Homepage </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
+  
+{% endblock %}
+
+
+{% block body %}
+
+  <section class="statistics">
+
+    <div class="ms">
+      
+      <article>
+        <p>Total Income</p>
+        <div class="data">
+          <i class="fas fa-donate"></i>
+          <p>$50.000</p>
+        </div>
+      </article>
+
+      <article>
+        <p>Donations</p>
+        <div class="data">
+          <i class="fas fa-hand-holding-usd"></i>
+          <p>$40.250</p>
+        </div>
+      </article>
+
+      <article>
+        <p>Balance</p>
+        <div class="data">
+          <i class="fas fa-balance-scale"></i>
+          <p>+25.600</p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="gs">
+
+      <article>
+        <p>Top Donations</p>
+        <div class="data">
+          <i class="fas fas fa-arrow-up"></i>
+          <p>$12.560</p>
+        </div>
+        <div class="profilo">
+              <img src="{{ url_for('static', filename='images/person.jpg') }}" alt="person" />
+              <div class="iden">
+                <p>Yasin inal</p>
+                <p>11051010</p>
+              </div>
+            </div>
+      </article>
+
+      <article>
+        <p>Last Donation</p>
+        <div class="data">
+          <i class="fas fas fa-arrow-up"></i>
+          <p>$12.560</p>
+        </div>
+        <div class="profilo">
+              <img src="{{ url_for('static', filename='images/person.jpg') }}" alt="person" />
+              <div class="iden">
+                <p>Yasin inal</p>
+                <p>11051010</p>
+              </div>
+            </div>
+      </article>
+
+      <article>
+        <p>Lowest Fee</p>
+        <div class="data">
+          <i class="fas fas fa-arrow-down"></i>
+          <p>$12.560</p>
+        </div>
+        <div class="profilo">
+              <img src="{{ url_for('static', filename='images/person.jpg') }}" alt="person" />
+              <div class="iden">
+                <p>Yasin inal</p>
+                <p>11051010</p>
+              </div>
+            </div>
+      </article>
+      
+      <section class="beside">
+
+        <div class="fancyfigures">
+          <!-- 
+            you may add the pie chart here
+          -->
+          <div class="pie"></div>
+        </div>
+        
+      <aside class="list">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Surname</th>
+              <th>Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Yasin</td>
+              <td>inal</td>
+              <td>$12.560</td>
+            </tr>
+            <tr>
+              <td>Jhon</td>
+              <td>Cena</td>
+              <td>$100</td>
+            </tr>
+          </tbody>
+        </table>
+      </aside>
+
+      </section>
+      
+    </div>
+  </section>
+
+{% endblock %}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}" />
+
+    {% block head %} {% endblock %}
+
+  </head>
+
+  <body>
+
+    <header class="header">
+
+      <img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" />
+
+      <form action="#" class="toolbar">
+        <i class="fas fa-search" style="margin-right:10px;"></i>
+        <input type="text" placeholder="Search" />
+      </form>
+
+      <section class="profile">
+        <img src="{{ url_for('static', filename='images/profilepicture.jpg') }}" alt="Profile Picture" />
+        <div class="credentials">
+          <h1 class="name">Ahmet Soran</h1>
+          <h2 class="role">Admin</h2>
+        </div>
+      </section>
+
+    </header>
+
+    <main>
+
+      <div class="menu">
+        <ul class="aul">
+          <li><a href="/" class="home-active">Home</a></li>
+          <li><a href="/table" class="table-active">Detailed Table</a></li>
+          <li><a href="/bank" class="bank-active">Bank Information</a></li>
+          <li><a href="/admins" class="admins-active">Admins</a></li>
+          <li><a href="/settings" class="settings-active">Settings</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+
+      {% block body %} {% endblock %}
+
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+  <title> Homepage </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/admins.css') }}" />
+
+{% endblock %}
+
+
+{% block body %}
+
+  <section id="yadi">
+    <table id="dt">
+      <thead>
+        <tr class="dtr">
+          <th>TC</th>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Email</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="dtr">
+          <td>110510102</td>
+          <td>Ahmet</td>
+          <td>Soran</td>
+          <td>Soran@gmail.com</td>
+          <td>Admin</td>
+          <td>
+            <button style="background-color: #e9c46a">Remove</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+{% endblock %}

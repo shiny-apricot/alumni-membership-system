@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+  <title> Homepage </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bank.css') }}" />
+
+{% endblock %}
+
+
+{% block body %}
+
+  <section id="bank">
+    
+    <div class="fixpos">
+      <table id="banktable">
+        <thead>
+          <tr class="dtr">
+            <th>TC</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Receipt Date</th>
+            <th>Amount</th>
+            <th>Receipt No.</th>
+          </tr>
+        </thead>
+        <!-- python code goes here -->
+        <tbody>
+          <tr class="dtr">
+            <td>110510102</td>
+            <td>Yasin</td>
+            <td>inal</td>
+            <td>2021-01-01</td>
+            <td>$50</td>
+            <td>1</td>
+          </tr>
+          <tr class="dtr">
+            <td>110510102</td>
+            <td>Jhon</td>
+            <td>Cena</td>
+            <td>2020-01-01</td>
+            <td>$500</td>
+            <td>8</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="divider"></div>
+    <div class="fixpos">
+      <div id="">
+        <label for="start">Select Year:</label>
+        <input
+          type="month"
+          id="start"
+          name="start"
+          min="2014-01"
+          value="2018-05"
+        />
+      </div>
+      <table id="extratable">
+        <thead>
+          <tr class="dtr">
+            <th>TC</th>
+            <th>Year</th>
+            <th>Annual Dues</th>
+            <th>Dues Paid</th>
+          </tr>
+        </thead>
+        <!-- python code goes here -->
+        <tbody>
+          <tr class="dtr">
+            <td>110510102</td>
+            <td>2021</td>
+            <td>$50</td>
+            <td>$50</td>
+          </tr>
+          <tr class="dtr">
+            <td>153785432</td>
+            <td>2020</td>
+            <td>$500</td>
+            <td>$77</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+{% endblock %}

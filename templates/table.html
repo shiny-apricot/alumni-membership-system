@@ -1,0 +1,60 @@
+{% extends 'base.html' %} {% block head %}
+
+<title>Homepage</title>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/table.css') }}"
+/>
+
+{% endblock %} {% block body %}
+
+<section id="detailedTable">
+  <table id="dt">
+    <thead>
+      <tr class="dtr">
+        <th>ID</th>
+        <th>Member Number</th>
+        <th>Gender</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Workplace</th>
+        <th>Email</th>
+        <th>Graduation Date</th>
+        <th>National ID</th>
+        <th>Department</th>
+        <th>Phone Number</th>
+        <th>Address</th>
+        <th>Province</th>
+        <th>Remaining Fee</th>
+        <th>Member Site</th>
+        <th>Registration date</th>
+        <th>Situation</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for member in members %}
+      <tr class="dtr">
+        <td>{{ member[0] }}</td>
+        <td>{{ member[1] }}</td>
+        <td>{{ member[2] }}</td>
+        <td>{{ member[3] }}</td>
+        <td>{{ member[4] }}</td>
+        <td>{{ member[5] }}</td>
+        <td>{{ member[6] }}</td>
+        <td>{{ member[7] }}</td>
+        <td>{{ member[8] }}</td>
+        <td>{{ member[9] }}</td>
+        <td>{{ member[10] }}</td>
+        <td>{{ member[11] }}</td>
+        <td>{{ member[12] }}</td>
+        <td>{{ member[13] }}</td>
+        <td>{{ member[14] }}</td>
+        <td>{{ member[15] }}</td>
+        <td>{{ member[16] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+{% endblock %}

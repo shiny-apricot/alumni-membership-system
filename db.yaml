@@ -1,0 +1,11 @@
+
+# uncomment the following and replace values with database credentials for app to work
+
+host: 'ec2-54-228-139-34.eu-west-1.compute.amazonaws.com'
+user: 'ckhbnszmophocn'
+password: '3d71b1cc99d3b995a555a6b41b31539fbb0a9b68bf0d34aedf20269e1a69e461'
+db: 'd7hvhj4nd7k2ob'
+# port: '<port>'
+
+
+# 'postgresql://ckhbnszmophocn{}:3d71b1cc99d3b995a555a6b41b31539fbb0a9b68bf0d34aedf20269e1a69e461@http://ec2-54-228-139-34.eu-west-1.compute.amazonaws.com/d7hvhj4nd7k2ob'
