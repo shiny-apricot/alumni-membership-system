@@ -28,7 +28,7 @@
             </section>
             <form action="#" id="toolbar">
                <i class="fas fa-search" id="search"></i>
-               <input type="text" placeholder="Search Bar" />
+               <input type="text" placeholder="Search" />
             </form>
             <!-- <div id="toolbar">
                <i class="fas fa-search" id="search"></i>
