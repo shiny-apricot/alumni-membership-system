@@ -22,7 +22,7 @@
         <section id="profile">
           <img src="image/profilepicture.jpg" alt="Profile Picture" />
           <div id="credentials">
-            <h1 id="name">Ahmet Soran</h1>
+            <h1 id="name"><?php echo $_SESSION['username']; ?></h1>
             <h2 id="role">Admin</h2>
           </div>
         </section>
@@ -40,11 +40,11 @@
     <main>
       <ul id="aul">
         <li><a style="font-weight: bold" href="#">Home</a></li>
-        <li><a href="table.html">Detailed Table</a></li>
+        <li><a href="table.php">Detailed Table</a></li>
         <li><a href="bank.html">Bank Information</a></li>
-        <li><a href="admins.html">Admins</a></li>
+        <li><a href="users.php">Admins</a></li>
         <li><a href="settings.html">Settings</a></li>
-        <li><a href="#">Log Out</a></li>
+        <li><a href="logout.php">Log Out</a></li>
       </ul>
       <section id="statistics">
         <div id="ms">

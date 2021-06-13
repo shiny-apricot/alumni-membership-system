@@ -68,7 +68,8 @@
                            { 
                            
                            ?>
-                        <a href="delete_user.php?userid=<?php echo $row["id"]; ?>">Delete</a>
+                        <a href="delete_user.php?userid=<?php echo $row["id"]; ?>"><td>
+                <button style="background-color: #e9c46a">DELETE</button> </td></a>
                         <?php } ?>
                      </td>
                   </tr>
