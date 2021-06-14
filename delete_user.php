@@ -18,10 +18,7 @@
          rel="stylesheet"
          href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
          />
-      <link rel="stylesheet" href="bank.html" />
-      <link rel="stylesheet" href="home.html" />
       <link rel="stylesheet" href="home.css" />
-      <title>Ilker</title>
    </head>
    <body>
       <div id="header">
@@ -44,14 +41,9 @@
          </header>
       </div>
       <main>
-         <ul id="aull">
-            <li><a href="home.php">Home</a></li>
-            <li><a style="font-weight: bold" href="table.php">Detailed Table</a></li>
-            <li><a href="bank.html">Bank Information</a></li>
-            <li><a href="user.php">Admins</a></li>
-            <li><a href="logout.php">Log Out</a></li>
-            <button id="thebtn">Edit Table</button>
-         </ul>
+         <?php 
+		   include('menu.php'); 
+		   ?>
          <section id="detailedTable">
             <table>
                <tr>

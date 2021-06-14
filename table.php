@@ -68,6 +68,7 @@
                            { 
                            
                            ?>
+                        <a href="editpage.php">EDIT</a>
                         <a href="delete_user.php?userid=<?php echo $row["id"]; ?>">Delete</a>
                         <?php } ?>
                      </td>

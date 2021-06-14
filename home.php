@@ -19,16 +19,16 @@
   <body>
     <div id="header">
       <header>
-        <section id="profile">
-          <img src="image/profilepicture.jpg" alt="Profile Picture" />
-          <div id="credentials">
-            <h1 id="name"><?php echo $_SESSION['username']; ?></h1>
-            <h2 id="role">Admin</h2>
-          </div>
-        </section>
+      <section id="profile">
+               <img src="image/profilepicture.jpg" alt="Profile Picture" />
+               <div id="credentials">
+                  <h1 id="name"><?php echo $_SESSION['username']; ?></h1>
+                  <h2 id="role">Admin</h2>
+               </div>
+            </section>
         <form action="#" id="toolbar">
           <i class="fas fa-search" id="search"></i>
-          <input type="text" placeholder="Search Bar" />
+          <input type="text" placeholder="Search" />
         </form>
         <!-- <div id="toolbar">
         <i class="fas fa-search" id="search"></i>
@@ -38,14 +38,9 @@
       </header>
     </div>
     <main>
-      <ul id="aul">
-        <li><a style="font-weight: bold" href="#">Home</a></li>
-        <li><a href="table.php">Detailed Table</a></li>
-        <li><a href="bank.html">Bank Information</a></li>
-        <li><a href="users.php">Admins</a></li>
-        <li><a href="settings.html">Settings</a></li>
-        <li><a href="logout.php">Log Out</a></li>
-      </ul>
+    <?php 
+		   include('menu.php'); 
+		   ?>
       <section id="statistics">
         <div id="ms">
           <article>

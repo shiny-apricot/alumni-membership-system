@@ -22,13 +22,13 @@
         <section id="profile">
           <img src="image/profilepicture.jpg" alt="Profile Picture" />
           <div id="credentials">
-            <h1 id="name">Ahmet Soran</h1>
+            <h1 id="name"><?php echo $_SESSION['username']; ?></h1>
             <h2 id="role">Admin</h2>
           </div>
         </section>
         <form action="#" id="toolbar">
           <i class="fas fa-search" id="search"></i>
-          <input type="text" placeholder="Search Bar" />
+          <input type="text" placeholder="Search" />
         </form>
         <!-- <div id="toolbar">
         <i class="fas fa-search" id="search"></i>
@@ -40,11 +40,11 @@
     <main>
       <ul id="aul">
         <li><a href="home.php">Home</a></li>
-        <li><a href="table.html">Detailed Table</a></li>
-        <li><a style="font-weight: bold" href="#">Bank Information</a></li>
+        <li><a href="table.php">Detailed Table</a></li>
+        <li><a style="font-weight: bold" href="bank.php">Bank Information</a></li>
         <li><a href="admins.html">Admins</a></li>
         <li><a href="settings.html">Settings</a></li>
-        <li><a href="#">Log Out</a></li>
+        <li><a href="logout.php">Log Out</a></li>
 
         <!-- <button id="thebtn">Edit Table</button> -->
       </ul>
