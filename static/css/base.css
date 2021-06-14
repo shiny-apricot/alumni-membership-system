@@ -19,7 +19,7 @@ img {
 
 a,
 li {
-  padding: 10px 0px;
+  padding: 6px 0px;
   list-style-type: none;
   text-decoration: none;
   color: black;
@@ -91,7 +91,7 @@ input[type="text"] {
 }
 .menu .aul {
   background-color: #ffffff;
-  width: 215px;
+  width: 270px;
   height: 40em;
   padding: 10px 0px 10px 15px;
   margin-top: 45px;
@@ -106,7 +106,7 @@ input[type="text"] {
 }
 .menu .aul li a {
   /* box-sizing: border-box; */
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   padding: 14px 20px;
   border-radius: 40px;
@@ -114,5 +114,5 @@ input[type="text"] {
 }
 .menu .aul li a:hover {
   background-color: #f78d2b;
-  font-size: 1.1rem;
+  font-size: 18px;
 }

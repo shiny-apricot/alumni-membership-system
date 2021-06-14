@@ -1,0 +1,18 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+
+    <title>Test Page</title>
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/table.css') }}"
+    />
+
+{% endblock %} 
+{% block body %}
+
+        {% for dep in dep_list %}
+            {{text}}
+        {% endfor %}
+
+{% endblock %}

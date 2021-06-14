@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>  
+<html>  
+     <head>  
+            <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/home.css"
+    />
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>  
+          <script type="text/javascript">  
+          google.charts.load('current', {'packages':['corechart']});  
+          google.charts.setOnLoadCallback(drawChart);  
+          function drawChart()  
+          {  
+               var data = google.visualization.arrayToDataTable([  
+                         ['Department', 'Number'],
+                         {% for dep in dep_list %}
+                            [ '{{dep[0] }}' , {{ dep[1] }} ],
+                         {% endfor %}
+                    ]);  
+               var options = {
+                     width: 500,
+                     height: 500,  
+                     pieHole: 0.6,
+                     pieSliceText: 'label',
+                     pieSliceTextStyle: {
+                        color: 'black',
+                        
+                        },
+                        textStyle: {
+                        fontSize: 4
+                        },
+                        chartArea:{
+                             left:0,
+                             top:0,
+                             width:"65%",
+                             height:"65%"
+                        }
+                    };  
+                    
+               var chart = new google.visualization.PieChart(document.getElementById('piechart'));  
+               chart.draw(data, options);  
+          }
+          </script>  
+     </head>  
+     <body>  
+          <div style="width:200px;">  
+               <h3 align="center"></h3>  
+               <div id="piechart" class="pie"></div>
+          </div>  
+     </body>  
+</html>  

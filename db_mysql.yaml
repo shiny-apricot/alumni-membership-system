@@ -1,8 +1,0 @@
-
-# uncomment the following and replace values with database credentials for app to work
-
-host: '<host>'
-user: '<username>'
-password: '<password>'
-db: '<database>'
-# port: '<port>'

@@ -15,12 +15,12 @@ lastly, run "pip install -r requirements.txt" while in the virtual environment t
 
 (optional) run "pip list" while in the virtual environment to see the list of the packages installed if necessary
 
-4.) (running the app with a MYSQL database)
+4.) (running the app with a database)
 to connect to a mysql database, open the 'db.yaml' and change the variables as instructed in the file
 
 5.)
- the packages should all be set up. So, while in the virtual environment, run "python app.py" (to start the app with a mysql database) or "python app_ps.py" (to start the app with a postgresql database) in the terminal. In the terminal, you should see a localhost link "http://127.0.0.1:5000/". Ctrl+click the link to open it in a browser or manually input the link in the browser to do the same thing
+ the packages should all be set up. So, while in the virtual environment, run "python app.py" in the terminal. In the terminal, you should see a localhost link "http://127.0.0.1:5000/". Ctrl+click the link to open it in a browser or manually input the link in the browser to do the same thing
 
 the app should be up and running on a local server
 
-to stop running, simply ctrl+c in the terminal to close. Run "python app.py" or "python app_ps.py" at any time to re-run the app
+to stop running, simply ctrl+c in the terminal to close. Run "python app.py" at any time to re-run the app
