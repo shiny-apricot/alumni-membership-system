@@ -10,8 +10,72 @@
 {% endblock %} 
 
 {% block body %}
+      <div class="button">
+          <form name="input-group" action="profile_edit" method="post"> 
+            <button type="submit" name="profile">Go to Profile</button>
+          </form>
+        </div>
 
-<p>{{ member[1] }} {{ member[2] }}</p>
+<section id="detailedTable">
+  <table id="dt">
+    <tbody>
+      <tr class="dtr">
+        <td> İsim </td>
+        <td>{{ member[0][3] }}</td>
+      </tr>
+      <tr class="dtr">
+        <td> Soyisim </td>
+        <td>{{ member[0][4] }}</td>
+      </tr>
+      <tr class="dtr">
+        <td> Cinsiyet </td>
+        <td>{{ member[0][4] }}</td>
+      </tr>
+      <tr class="dtr">
+        <td> İşyeri </td>
+        <td>{{ member[0][5] }}</td>
+      </tr>
+      <tr class="dtr">
+        <td> Email </td>
+        <td>{{ member[0][6] }}</td>
+      </tr>
+      <tr class="dtr">
+        <td> Mezuniyet Tarihi </td>
+        <td>{{ member[0][7] }}</td>
+      </tr>
+      <tr class="dtr">
+        <td> Bölüm </td>
+        <td>{{ member[0][8] }}</td>
+      </tr>
+      <tr class="dtr">
+        <td> Tc No </td>
+        <td>{{ member[0][9] }}</td>
+      </tr>
+      <tr class="dtr">
+        <td> Telefon </td>
+        <td>{{ member[0][10] }}</td>
+      </tr>
+      <tr class="dtr">
+        <td> Adres </td>
+        <td>{{ member[0][11] }}</td>
+      </tr>
+      <tr class="dtr">
+        <td> İl </td>
+        <td>{{ member[0][12] }}</td>
+      </tr>
+      <tr class="dtr">
+        <td> Kayıt Tarihi </td>
+        <td>{{ member[0][15] }}</td>
+      </tr>
+      <tr class="dtr">
+        <td> Açıklama </td>
+        <td>{{ member[0][16] }}</td>
+      </tr>
+    </tbody>
+  </table>
+  </section>
+
+      
 
 
 

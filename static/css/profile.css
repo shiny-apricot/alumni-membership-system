@@ -83,3 +83,25 @@
     margin: 10px;
     height: 50px;
 }
+
+#dt {
+    margin-top: 10px;
+    padding-top: 80px;
+    padding-left: 50px;
+    font-size: 13px;
+    width: 100%;
+  }
+  
+  .dtr td,
+  .dtr th {
+    padding: 15px 18px;
+    height: 20px; 
+    background-color: rgba(223, 223, 223, 0.705);
+  }
+
+  
+.table-active {
+    background-color: black;
+    color: white;
+  }
+  

@@ -57,7 +57,7 @@ def home():
           app.logger.error("BELOW")
           print(dep_list)
           return render_template('home.html', user=session['user'], dep_list=dep_list)
-  return render_template('login.html')
+  return redirect(url_for('login'))
 
 @app.before_request
 def before_request():
@@ -77,7 +77,7 @@ def bank():
         receipt_list = cursor.fetchall()
         print('receipt list= ',receipt_list)
         return render_template('bank.html', receipt_list=receipt_list, user=session['user'])
-  return render_template('login.html')
+  return redirect(url_for('login'))
 
 
 
@@ -119,7 +119,7 @@ def admins():
         admins = cursor.fetchall()
         print('admins=> ',admins)
         return render_template('admins.html', admins=admins, user=session['user'])
-  return render_template('login.html')
+  return redirect(url_for('login'))
 
 
 
@@ -133,7 +133,7 @@ def table():
         cursor.execute("SELECT * FROM Member")
         members = cursor.fetchall()
     return render_template('table.html', members=members, user=session['user'])
-  return render_template('login.html')
+  return redirect(url_for('login'))
 
 
 @app.route('/profile/id=<member_id>', methods=['GET', 'POST'])
@@ -146,9 +146,21 @@ def profile(member_id):
         member = cursor.fetchall()
 
         print('## member=',member)
-        return render_template('profile.html', member=member, user=session['user'])
-  return render_template('login.html')
+        return render_template('profile.html', member=member, user=session['user'], member_id=member_id)
+  return redirect(url_for('login'))
 
+@app.route('/profile-edit/id=<member_id>', methods=['GET','POST'])
+def edit_profile(member_id):
+  if g.user:
+    with connection:
+      with connection.cursor() as cursor:
+        query = "SELECT * FROM Member WHERE member_id = "+member_id
+        cursor.execute(query)
+        member = cursor.fetchall()
+
+        print('## member=',member)
+        return render_template('profile_edit.html', member=member, user=session['user'], member_id=member_id)
+  return redirect(url_for('login'))
 
 
 @app.route('/settings', methods=['GET', 'POST'])
@@ -158,7 +170,7 @@ def settings():
       discount = request.form['"name" or "id" of content ']
     else:
       return render_template('settings.html',user=session['user'])
-  return render_template('login.html')
+  return redirect(url_for('login'))
 
 
 
@@ -187,7 +199,7 @@ def upload():
         return redirect(request.url)
         
     return render_template('upload.html', user=session['user'])
-  return render_template('login.html')
+  return redirect(url_for('login'))
 
 def save_file(file):
       print('save file started')
