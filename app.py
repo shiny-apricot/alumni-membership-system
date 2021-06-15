@@ -12,6 +12,10 @@ import login_page
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
+UPLOAD_FOLDER = 'upload'
+# ALLOWED_EXTENSIONS = set(['xlsx', 'xls'])
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
 
 
 # postgresql database configuration
@@ -58,7 +62,6 @@ def home():
 @app.before_request
 def before_request():
   g.user = None
-
   if 'user' in session:
     g.user = session['user']
 
@@ -157,11 +160,6 @@ def settings():
       return render_template('settings.html',user=session['user'])
   return render_template('login.html')
 
-
-
-UPLOAD_FOLDER = 'upload\\'
-# ALLOWED_EXTENSIONS = set(['xlsx', 'xls'])
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
 @app.route('/upload', methods=['GET', 'POST'])
