@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+  <title> Homepage </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
+  
+{% endblock %}
+
+
+{% block body %}
+
+  <section class="upload">
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <div class= "file-form">
+            <input type="file" id="file" name="existing_file">
+            <input type="submit">
+        </div>
+    </form>
+
+    <form action="/upload">
+        <input type="file" method="POST" id="file" name="receipt_file">
+        <input type="submit">
+    </form>
+
+  </section>
+
+{% endblock %}

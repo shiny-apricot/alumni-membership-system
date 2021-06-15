@@ -1,0 +1,27 @@
+
+.admins-active {
+  background-color: black;
+  color: white;
+}
+
+#statistics,
+#detailedTable,
+#bank,
+#yadi {
+  left: 200px;
+  background-color: #9d0208;
+  background-color: #e9ecef;
+  box-shadow: -0.1em 0 5px 0 #e9ecef;
+  width: 100%;
+  height: 50em;
+}
+
+#dt {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.dtr td,
+.dtr th {
+  padding: 15px 18px;
+}

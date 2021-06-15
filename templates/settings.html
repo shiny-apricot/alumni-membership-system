@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+  <title> Homepage </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/settings.css') }}" />
+
+{% endblock %}
+
+
+{% block body %}
+
+  <section id="statistics">
+    <aside>
+      <div id="createDiscount">Create Discount:</div>
+
+      <form id="firstprt" action="">
+        <div class="lett">
+          <label for="name">Fee</label>
+          <input type="number" name="name" />
+        </div>
+        <div class="lett">
+          <label for="discount">Discount</label>
+          <div><input type="number" name="discount" /> %</div>
+        </div>
+        <div class="lett">
+          <label for="for">Alumni of</label>
+          <input type="number" name="for" />
+        </div>
+        <div class="lett">
+          <label for="interval">From-To</label>
+          <div>
+            2021
+            <input type="range" name="interval" min="2021" max="2031" />
+            2031
+          </div>
+        </div>
+        <div class="lett">
+          <input type="button" name="add" value="Create" />
+        </div>
+      </form>
+    </aside>
+    <div id="divide"></div>
+    <aside id="discountList">
+      Discount List
+      <section id="makespace">
+        <table>
+          <thead>
+            <tr>
+              <th>Fee</th>
+              <th>Discount</th>
+              <th>Total</th>
+              <th>From-To</th>
+              <th>Alumni</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>100 TL</td>
+              <td>10%</td>
+              <td>90 TL</td>
+              <td>2021-2022</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <td>200 TL</td>
+              <td>20%</td>
+              <td>160 TL</td>
+              <td>2021-2023</td>
+              <td>2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </aside>
+  </section>
+
+{% endblock %}
