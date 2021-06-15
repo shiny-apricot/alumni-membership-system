@@ -175,6 +175,7 @@ th {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  /* background: #35dbeb; */
+  background: #35dbeb;
+  mix-blend-mode: multiply;
   background-image: linear-gradient(to right, transparent 50%, #bdb2ff 0);
 }
