@@ -25,13 +25,13 @@
 
       <form action="#" class="toolbar">
         <i class="fas fa-search" style="margin-right:10px;"></i>
-        <input type="text" placeholder="Search" />
+        <input type="text" placeholder="Search" class="search" />
       </form>
 
       <section class="profile">
         <img src="{{ url_for('static', filename='images/profilepicture.jpg') }}" alt="Profile Picture" />
         <div class="credentials">
-          <h1 class="name">Ahmet Soran</h1>
+          <h1 class="name">TOBB</h1>
           <h2 class="role">Admin</h2>
         </div>
       </section>
@@ -42,12 +42,13 @@
 
       <div class="menu">
         <ul class="aul">
-          <li><a href="/" class="home-active">Home</a></li>
-          <li><a href="/table" class="table-active">Detailed Table</a></li>
+          <li><a href="/home" class="home-active">Home</a></li>
+          <li><a href="/table" class="table-active">Member List</a></li>
           <li><a href="/bank" class="bank-active">Bank Information</a></li>
           <li><a href="/admins" class="admins-active">Admins</a></li>
+          <li><a href="/upload" class="upload-active">Upload Data</a></li>
           <li><a href="/settings" class="settings-active">Settings</a></li>
-          <li><a href="#">Log Out</a></li>
+          <li><a href="/logout">Log Out</a></li>
         </ul>
       </div>
 

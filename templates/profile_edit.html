@@ -1,0 +1,110 @@
+{% extends 'base.html' %} 
+{% block head %}
+
+<title>Profile</title>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/profile.css') }}"
+/>
+
+{% endblock %} 
+
+{% block body %}
+
+<div class="container">
+<div class="row gutters">
+<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+<div class="card h-100">
+	<div class="card-body">
+		<div class="account-settings">
+			<div class="user-profile">
+				<h5 class="user-name">   {{member[0]}}    </h5>
+				<h6 class="user-email">ahmet.soran@agu.edu.tr</h6>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="card h-100">
+	<div class="card-body">
+    				<h6 class="mb-2 text-primary">Member Information</h6>
+		
+		<div class="row gutters">
+
+
+            <div class="row1">
+				<div class="form-group">
+					<label for="fullName">Member ID</label>
+					<input type="text" class="form-control" id="eMail" value="{{member[0]}}">
+				</div>
+				<div class="form-group">
+					<label for="fullName">Name</label>
+					<input type="text" class="form-control" id="eMail" value="{{member[0]}}">
+				</div>
+                <div class="form-group">
+					<label for="eMail">Surname</label>
+					<input type="email" class="form-control" id="eMail" value="{{member[0]}}">
+				</div>
+				<div class="form-group">
+					<label for="eMail">Gender</label>
+					<input type="text" class="form-control" id="eMail" value="{{member[0]}}">
+				</div>
+				<div class="form-group">
+					<label for="eMail">E-Mail</label>
+					<input type="text" class="form-control" id="eMail" value="{{member[0]}}">
+				</div>
+				<div class="form-group">
+					<label for="eMail">National_ID_Number</label>
+					<input type="text" class="form-control" id="eMail" value="{{member[0]}}">
+				</div>
+				<div class="form-group">
+					<label for="eMail">Province</label>
+					<input type="text" class="form-control" id="eMail" value="{{member[0]}}">
+				</div>
+				<div class="form-group">
+					<label for="website">Member Situation</label>
+					<input type="url" class="form-control" id="website" value="{{member[0]}}">
+				</div>
+				<div class="form-group">
+					<label for="website">Informing About Member Situation</label>
+					<input type="url" class="form-control" id="website" value="{{member[0]}}">
+				</div>
+
+            </div>
+            <div class="row2">
+				<div class="form-group">
+					<label for="website">Workplace</label>
+					<input type="url" class="form-control" id="website" value="{{member[0]}}">
+				</div>
+				<div class="form-group">
+					<label for="website">Graduation Date</label>
+					<input type="url" class="form-control" id="website" value="{{member[0]}}">
+				</div>
+				<div class="form-group">
+					<label for="website">Department</label>
+					<input type="url" class="form-control" id="website" value="{{member[0]}}">
+				</div>
+				<div class="form-group">
+					<label for="website">Address</label>
+					<input type="url" class="form-control" id="website" value="{{member[0]}}">
+				</div>
+				<div class="form-group">
+					<label for="website">Remaining Fee</label>
+					<input type="url" class="form-control" id="website" value="{{member[0]}}">
+				</div>
+				<div class="form-group">
+					<label for="website">Member Registration Date</label>
+					<input type="url" class="form-control" id="website" value="{{member[0]}}">
+				</div>
+            </div>
+				<div class="text-right">
+					<button type="button" id="submit" name="submit" class="btn btn-secondary">Cancel</button>
+					<button type="button" id="submit" name="submit" class="btn btn-secondary">Delete</button>
+					<button type="button" id="submit" name="submit" class="btn btn-primary">Update</button>
+				</div>
+
+		</div>
+	</div>
+    </div>
+
+{%endblock%}

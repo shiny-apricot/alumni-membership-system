@@ -24,4 +24,16 @@
 .dtr td,
 .dtr th {
   padding: 15px 18px;
+  
+}
+
+.add-admin{
+  padding: 25px;
+}
+
+.hide{
+  display:none;
+}
+.show{
+  display:block;
 }

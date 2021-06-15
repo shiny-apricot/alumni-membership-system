@@ -2,6 +2,7 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  font-size: 15px;
 }
 
 body {
@@ -36,7 +37,7 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: #f78d2b;
-  height: 7em;
+  height: 140px;
 }
 header .profile h1 {
   margin-top: -0.7em;
@@ -73,13 +74,13 @@ header .profile h2 {
   background-color: white;
 }
 
-input[type="text"] {
+/* input[type="text"] {
   outline: none;
   border: none;
-  font-size: 1.2em;
+  font-size: 15px;
   font-weight: 400;
   width: 70%;
-}
+} */
 
 .logo {
   height: 5.5em;
@@ -115,4 +116,12 @@ input[type="text"] {
 .menu .aul li a:hover {
   background-color: #f78d2b;
   font-size: 18px;
+}
+
+.search{
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  width: 70%;
 }

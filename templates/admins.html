@@ -15,26 +15,40 @@
     <table id="dt">
       <thead>
         <tr class="dtr">
-          <th>TC</th>
-          <th>Name</th>
-          <th>Surname</th>
-          <th>Email</th>
-          <th>Level</th>
+          <th>Username</th>
         </tr>
       </thead>
       <tbody>
-        <tr class="dtr">
-          <td>110510102</td>
-          <td>Ahmet</td>
-          <td>Soran</td>
-          <td>Soran@gmail.com</td>
-          <td>Admin</td>
-          <td>
-            <button style="background-color: #e9c46a">Remove</button>
-          </td>
-        </tr>
+          {% for admin in admins %}
+          <tr class="dtr">
+            <td>{{ admin[0] }}</td>
+            <td>
+              <form name="input-group" action="admins" method="post"> 
+                <button type="submit" name="delete-admin" value="{{ admin[0] }}">Delete</button>
+              </form>
+            </td>
+
+            {% if admin[0] != 'admin'%}
+            <td>
+              <form name="input-group" action="admins" method="post"> 
+                <button type="submit" name="update-password" value="{{ admin[0] }}">Update Password</button>
+                <input type="text" id="textInput" placeholder="New Password">
+              </form>
+            </td>
+            {% endif %}
+          </tr>
+          {% endfor %}
       </tbody>
     </table>
+  
+  <div class="add-admin">
+    <form name="input-group" action="admins" method="post">
+      <input type="text" name="username" placeholder="username">
+      <input type="password" name="password" placeholder="password">
+      <button type="submit" name="add-admin" value="x">Add New Admin</button>
+    </form>
+  </div>
+
   </section>
 
 {% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %} 
+{% block head %}
+
+<title>Profile</title>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/home.css') }}"
+/>
+
+{% endblock %} 
+
+{% block body %}
+
+<p>{{ member[1] }} {{ member[2] }}</p>
+
+
+
+{%endblock%}
