@@ -60,17 +60,10 @@
                      <td><?php echo $row["username"]; ?></td>
                      <td><?php echo $row["password"]; ?></td>
                      <td>
-                        <?php if($row["username"] == "admin")
-                           {
-                           	echo "admin can not be deleted";
-                           }
-                           else
-                           { 
-                           
-                           ?>
-                        <a href="editpage.php">EDIT</a>
+                     
+                        <a href="editpageforuser.php?userid=<?php echo $row["id"]; ?>">EDIT</a>
                         <a href="delete_user.php?userid=<?php echo $row["id"]; ?>">Delete</a>
-                        <?php } ?>
+         
                      </td>
                   </tr>
                   <?php

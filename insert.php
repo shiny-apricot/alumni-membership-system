@@ -2,15 +2,17 @@
 
 include('functions.php');
 include('server.php');
-if (isset($_POST['submit'])) {
-    $id = $_POST['id'];
-    $name = $_POST['name'];
-    $gend = $_POST['gender'];
-    $phone = $_POST['phone'];
+if (isset($_POST['update'])) {
+    $name = $_POST['username'];
+    $gend = $_POST['password'];
 
-    $query = pg_query($db_conn, "INSERT  INTO member(member_id, name, gender, phone_number ) VALUES ('$id','$name','$gend','$phone');");
+    $query = pg_query($db, "INSERT  INTO user_table(name, password) VALUES ('$name','$gend')";
+
     if ( $query ) {
         echo  "Record Successfully Added!";
+    }
+    else{
+        echo "not valid";
     }
 }
 
