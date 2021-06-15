@@ -24,3 +24,4 @@ SQLAlchemy==1.4.17
 Werkzeug==2.0.1
 pandas
 openpyxl
+coloredlogs

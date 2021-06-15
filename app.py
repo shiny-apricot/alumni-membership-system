@@ -2,7 +2,7 @@
 from flask import Flask, render_template, url_for, request, redirect, session, g
 import psycopg2
 import yaml
-import coloredlogs, logging
+import logging
 import os, hashlib
 import member_list_reader as m_read
 import receipt_reader as r_read
@@ -12,7 +12,6 @@ import login_page
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
-coloredlogs.install(level='DEBUG')
 
 
 # postgresql database configuration
