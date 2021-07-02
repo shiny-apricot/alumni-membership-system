@@ -53,7 +53,7 @@ def home():
     dep_list = list()
     app.logger.error("BELOW")
     print(dep_list)
-    return render_template('home.html', user=session['user'], dep_list=dep_list)
+    return render_template('home.html', dep_list=dep_list)
 
 
 # @app.before_request
@@ -72,7 +72,7 @@ def bank():
         cursor.execute(query)
         receipt_list = cursor.fetchall()
         print('receipt list= ',receipt_list)
-        return render_template('bank.html', receipt_list=receipt_list, user=session['user'])
+        return render_template('bank.html', receipt_list=receipt_list)
 
 
 
@@ -113,7 +113,7 @@ def admins():
       cursor.execute(query)
       admins = cursor.fetchall()
       print('admins=> ',admins)
-      return render_template('admins.html', admins=admins, user=session['user'])
+      return render_template('admins.html', admins=admins)
 
 
 
@@ -124,7 +124,7 @@ def table():
     with connection.cursor() as cursor:
       cursor.execute("SELECT * FROM Member")
       members = cursor.fetchall()
-  return render_template('table.html', members=members, user=session['user'])
+  return render_template('table.html', members=members)
 
 
 
@@ -137,7 +137,7 @@ def profile(member_id):
       member = cursor.fetchall()
 
       print('## member=',member)
-      return render_template('profile.html', member=member, user=session['user'], member_id=member_id)
+      return render_template('profile.html', member=member, member_id=member_id)
 
 @app.route('/profile-edit/id=<member_id>', methods=['GET','POST'])
 def edit_profile(member_id):
@@ -148,7 +148,7 @@ def edit_profile(member_id):
       member = cursor.fetchall()
 
       print('## member=',member)
-      return render_template('profile_edit.html', member=member, user=session['user'], member_id=member_id)
+      return render_template('profile_edit.html', member=member, member_id=member_id)
 
 
 
@@ -157,7 +157,7 @@ def settings():
   if request.method == 'POST':
     discount = request.form['"name" or "id" of content ']
   else:
-    return render_template('settings.html',user=session['user'])
+    return render_template('settings.html')
 
 
 
@@ -184,7 +184,7 @@ def upload():
       #redirect to upload page
       return redirect(request.url)
       
-  return render_template('upload.html', user=session['user'])
+  return render_template('upload.html')
 
 def save_file(file):
       print('save file started')
