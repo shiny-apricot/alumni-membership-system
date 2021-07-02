@@ -50,26 +50,22 @@ def logout():
 
 @app.route('/home')
 def home():
-  if g.user:
-      with connection:
-        with connection.cursor() as cursor:
-          dep_list = list()
-          app.logger.error("BELOW")
-          print(dep_list)
-          return render_template('home.html', user=session['user'], dep_list=dep_list)
-  return redirect(url_for('login'))
+    dep_list = list()
+    app.logger.error("BELOW")
+    print(dep_list)
+    return render_template('home.html', user=session['user'], dep_list=dep_list)
 
-@app.before_request
-def before_request():
-  g.user = None
-  if 'user' in session:
-    g.user = session['user']
+
+# @app.before_request
+# def before_request():
+#   g.user = None
+#   if 'user' in session:
+#     g.user = session['user']
 
 
 
 @app.route('/bank')
 def bank():
-  if g.user:
     with connection:
       with connection.cursor() as cursor:
         query = "SELECT * FROM receipt ORDER BY date_of_receipt"
@@ -77,129 +73,118 @@ def bank():
         receipt_list = cursor.fetchall()
         print('receipt list= ',receipt_list)
         return render_template('bank.html', receipt_list=receipt_list, user=session['user'])
-  return redirect(url_for('login'))
+
 
 
 
 @app.route('/admins', methods=['GET', 'POST',])
 def admins():
-  if g.user:
-    with connection:
-      with connection.cursor() as cursor:
-        if request.method == 'POST':
-          print('POST!')
-          if request.form.get('delete-admin'):
-            admin_username = request.form['delete-admin']
-            print('deleted admin username=> ',admin_username)
-            if admin_username != 'admin':
-              query = "DELETE FROM admin WHERE username = '"+admin_username+"' "
-              cursor.execute(query)
-              connection.commit()
-          
-          if request.form.get('add-admin'):
-            print('add admin')
-            admin_username = request.form['username']
-            admin_password = request.form['password']
-            print('username=> ', admin_username, 'password=>', admin_password)
-            admin_password = admin_password.encode()
-            admin_password = hashlib.md5(admin_password)
-            admin_password = admin_password.hexdigest()
-
-            query = "INSERT INTO admin(username, password) VALUES (' "+ admin_username +" ', ' "+ admin_password +" ')"
+  with connection:
+    with connection.cursor() as cursor:
+      if request.method == 'POST':
+        print('POST!')
+        if request.form.get('delete-admin'):
+          admin_username = request.form['delete-admin']
+          print('deleted admin username=> ',admin_username)
+          if admin_username != 'admin':
+            query = "DELETE FROM admin WHERE username = '"+admin_username+"' "
             cursor.execute(query)
             connection.commit()
-            print('done')
-          
-          if request.form.get('update-password'):
-            print('update admin password')
+        
+        if request.form.get('add-admin'):
+          print('add admin')
+          admin_username = request.form['username']
+          admin_password = request.form['password']
+          print('username=> ', admin_username, 'password=>', admin_password)
+          admin_password = admin_password.encode()
+          admin_password = hashlib.md5(admin_password)
+          admin_password = admin_password.hexdigest()
+
+          query = "INSERT INTO admin(username, password) VALUES (' "+ admin_username +" ', ' "+ admin_password +" ')"
+          cursor.execute(query)
+          connection.commit()
+          print('done')
+        
+        if request.form.get('update-password'):
+          print('update admin password')
 
 
-        query = "SELECT * FROM admin"
-        cursor.execute(query)
-        admins = cursor.fetchall()
-        print('admins=> ',admins)
-        return render_template('admins.html', admins=admins, user=session['user'])
-  return redirect(url_for('login'))
+      query = "SELECT * FROM admin"
+      cursor.execute(query)
+      admins = cursor.fetchall()
+      print('admins=> ',admins)
+      return render_template('admins.html', admins=admins, user=session['user'])
 
 
 
 
 @app.route('/table')
 def table():
-  if g.user:
-    # postgre queries
-    with connection:
-      with connection.cursor() as cursor:
-        cursor.execute("SELECT * FROM Member")
-        members = cursor.fetchall()
-    return render_template('table.html', members=members, user=session['user'])
-  return redirect(url_for('login'))
+  with connection:
+    with connection.cursor() as cursor:
+      cursor.execute("SELECT * FROM Member")
+      members = cursor.fetchall()
+  return render_template('table.html', members=members, user=session['user'])
+
 
 
 @app.route('/profile/id=<member_id>', methods=['GET', 'POST'])
 def profile(member_id):
-  if g.user:
-    with connection:
-      with connection.cursor() as cursor:
-        query = "SELECT * FROM Member WHERE member_id = "+member_id
-        cursor.execute(query)
-        member = cursor.fetchall()
+  with connection:
+    with connection.cursor() as cursor:
+      query = "SELECT * FROM Member WHERE member_id = "+member_id
+      cursor.execute(query)
+      member = cursor.fetchall()
 
-        print('## member=',member)
-        return render_template('profile.html', member=member, user=session['user'], member_id=member_id)
-  return redirect(url_for('login'))
+      print('## member=',member)
+      return render_template('profile.html', member=member, user=session['user'], member_id=member_id)
 
 @app.route('/profile-edit/id=<member_id>', methods=['GET','POST'])
 def edit_profile(member_id):
-  if g.user:
-    with connection:
-      with connection.cursor() as cursor:
-        query = "SELECT * FROM Member WHERE member_id = "+member_id
-        cursor.execute(query)
-        member = cursor.fetchall()
+  with connection:
+    with connection.cursor() as cursor:
+      query = "SELECT * FROM Member WHERE member_id = "+member_id
+      cursor.execute(query)
+      member = cursor.fetchall()
 
-        print('## member=',member)
-        return render_template('profile_edit.html', member=member, user=session['user'], member_id=member_id)
-  return redirect(url_for('login'))
+      print('## member=',member)
+      return render_template('profile_edit.html', member=member, user=session['user'], member_id=member_id)
+
 
 
 @app.route('/settings', methods=['GET', 'POST'])
 def settings():
-  if g.user:
-    if request.method == 'POST':
-      discount = request.form['"name" or "id" of content ']
-    else:
-      return render_template('settings.html',user=session['user'])
-  return redirect(url_for('login'))
+  if request.method == 'POST':
+    discount = request.form['"name" or "id" of content ']
+  else:
+    return render_template('settings.html',user=session['user'])
 
 
 
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
-  if g.user:
-    print('###############################')
-    if request.method == "POST":
+  print('###############################')
+  if request.method == "POST":
 
-      print('first if')
-      if request.files.get('receipt_file'):
-        receipt_file = request.files["receipt_file"]
-        print('got receipt')
-        receipt_directory = save_file(receipt_file)
-        dataframe = r_read.receipt_reader(receipt_directory)
-        insert_receipt(connection,dataframe)
-        return redirect(request.url)
+    print('first if')
+    if request.files.get('receipt_file'):
+      receipt_file = request.files["receipt_file"]
+      print('got receipt')
+      receipt_directory = save_file(receipt_file)
+      dataframe = r_read.receipt_reader(receipt_directory)
+      insert_receipt(connection,dataframe)
+      return redirect(request.url)
 
-      print('go next if')
-      if request.files.get('member_file'):
-        member_file = request.files['member_file']
-        print('we got the FILES ##')
-        member_directory = save_file(member_file)
-        m_read.process_excel_rows(connection, member_directory)
-        #redirect to upload page
-        return redirect(request.url)
-        
-    return render_template('upload.html', user=session['user'])
-  return redirect(url_for('login'))
+    print('go next if')
+    if request.files.get('member_file'):
+      member_file = request.files['member_file']
+      print('we got the FILES ##')
+      member_directory = save_file(member_file)
+      m_read.process_excel_rows(connection, member_directory)
+      #redirect to upload page
+      return redirect(request.url)
+      
+  return render_template('upload.html', user=session['user'])
 
 def save_file(file):
       print('save file started')
