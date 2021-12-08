@@ -1,5 +1,31 @@
+<!-- ![Alumni Membership System DEMO](https://imgur.com/rpLGlHY.gif) -->
+<img src="https://imgur.com/rpLGlHY.gif" width="710" height="400" />
+"Choose File" part is not showing because of the video recording software.
+
+</br>
+</br>
+
+### The technologies we have used in this project:
+- **PostgreSQL**
+- **Flask and Python**
+- **Pandas Library** to Fetch Money Transfer Data from Receipt Excel Files of the Banks.
+- **Heroku Environment**
+
+</br>
+
+**NOTE:** We did not consider security related problems in this project.
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
 <!-- instructions for running app -->
 
+# SETUP
 NOTE: IF "ENV" DIRECTORY ALREADY EXISTS IN THE APP'S DIRECTORY, SKIP STEPS 1 & 3
 
 assuming you already have python3.3 or higher installed
